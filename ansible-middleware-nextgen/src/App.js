@@ -106,7 +106,7 @@ class SeparateTabs extends React.Component {
               tabContentId="refTab6Section"
               tabContentRef={this.contentRef6}
             />
-            </Tabs>
+          </Tabs>
         </MastheadContent>
       </Masthead>
         <div>
@@ -144,7 +144,10 @@ class SeparateTabs extends React.Component {
 
 function App() {
   return (
-      <span><SeparateTabs /></span>
+    <span>
+    <SeparateTabs />
+    <footer class="footer">Content</footer>
+    </span>  
   );
 }
 
