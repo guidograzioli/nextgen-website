@@ -96,12 +96,6 @@ class SeparateTabs extends React.Component {
             />
             <Tab
               eventKey={4}
-              title={<TabTitleText>Examples</TabTitleText>}
-              tabContentId="refTab5Section"
-              tabContentRef={this.contentRef5}
-            />
-            <Tab
-              eventKey={5}
               title={<TabTitleText>Documenation</TabTitleText>}
               tabContentId="refTab6Section"
               tabContentRef={this.contentRef6}
@@ -111,6 +105,7 @@ class SeparateTabs extends React.Component {
       </Masthead>
         <div>
           <TabContent
+            /* Home */
             eventKey={0}
             id="refTab1Section"
             ref={this.contentRef1}
@@ -119,6 +114,7 @@ class SeparateTabs extends React.Component {
             Tab 1 section
           </TabContent>
           <TabContent
+            /* Overview */
             eventKey={1}
             id="refTab2Section"
             ref={this.contentRef2}
@@ -128,7 +124,28 @@ class SeparateTabs extends React.Component {
             Tab 2 section
           </TabContent>
           <TabContent
+            /* Collections */
             eventKey={2}
+            id="refTab3Section"
+            ref={this.contentRef3}
+            aria-label="This is content for the third separate content tab"
+            hidden
+          >
+            Tab 3 section
+          </TabContent>
+          <TabContent
+            /* Examples */
+            eventKey={3}
+            id="refTab3Section"
+            ref={this.contentRef3}
+            aria-label="This is content for the third separate content tab"
+            hidden
+          >
+            Tab 4 section
+          </TabContent>
+          <TabContent
+            /* Documentation */
+            eventKey={4}
             id="refTab3Section"
             ref={this.contentRef3}
             aria-label="This is content for the third separate content tab"
@@ -146,7 +163,7 @@ function App() {
   return (
     <span>
     <SeparateTabs />
-    <footer class="footer">Content</footer>
+    <footer class="footer">Footer Content</footer>
     </span>  
   );
 }
