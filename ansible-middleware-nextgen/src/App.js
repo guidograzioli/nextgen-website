@@ -5,9 +5,10 @@ import {
   Button,
   Card,
   CardBody,
+  Grid,
   Page,
   Masthead,
-  MastheadToggle, 
+  MastheadToggle,
   MastheadMain,
   MastheadBrand,
   MastheadContent,
@@ -31,6 +32,9 @@ import {
   CardFooter,
   Gallery,
   Split,
+  GalleryItem,
+  GridItem,
+  SplitItem,
 } from '@patternfly/react-core'
 
 import {
@@ -65,61 +69,58 @@ class SeparateTabs extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <Masthead id="basic-example">
-        <MastheadContent>
-          <Tabs
-            activeKey={this.state.activeTabKey}
-            onSelect={this.handleTabClick}
-            aria-label="Tabs in the seperate content example"
-            role="region"
-          >
-            <Tab
-              eventKey={0}
-              title={<TabTitleText>Home</TabTitleText>}
-              tabContentId="refTab1Section"
-              tabContentRef={this.contentRef1}
+        <Masthead id="basic-example">
+          <MastheadContent>
+            <Tabs
+              activeKey={this.state.activeTabKey}
+              onSelect={this.handleTabClick}
+              aria-label="Tabs in the seperate content example"
+              role="region"
+              
             >
-            </Tab>
-            <Tab
-              eventKey={1}
-              title={<TabTitleText>Overview</TabTitleText>}
-              tabContentId="refTab2Section"
-              tabContentRef={this.contentRef2}
-            />
-            <Tab
-              eventKey={2}
-              title={<TabTitleText>Collections</TabTitleText>}
-              tabContentId="refTab3Section"
-              tabContentRef={this.contentRef3}
-            />
-            <Tab
-              eventKey={3}
-              title={<TabTitleText>Examples</TabTitleText>}
-              tabContentId="refTab4Section"
-              tabContentRef={this.contentRef4}
-            />
-            <Tab
-              eventKey={4}
-              title={<TabTitleText>Documenation</TabTitleText>}
-              tabContentId="refTab5Section"
-              tabContentRef={this.contentRef5}
-            />
-          </Tabs>
-          <Toolbar id="toolbar" isFullHeight isStatic>
-            <ToolbarContent>
-              <ToolbarGroup
-                variant="icon-button-group"
-                alignment={{ default: 'alignRight' }}
-                spacer={{ default: 'spacerNone', md: 'spacerMd' }}
+              <Tab
+                eventKey={0}
+                title={<TabTitleText>Home</TabTitleText>}
+                tabContentId="refTab1Section"
+                tabContentRef={this.contentRef1}
+                
               >
-                <ToolbarItem>
-                  <Button>I am a button</Button>
-                </ToolbarItem>
-              </ToolbarGroup>
-            </ToolbarContent>
-          </Toolbar>
-        </MastheadContent>
-      </Masthead>
+              </Tab>
+              <Tab
+                eventKey={1}
+                title={<TabTitleText>Overview</TabTitleText>}
+                tabContentId="refTab2Section"
+                tabContentRef={this.contentRef2}
+              />
+              <Tab
+                eventKey={2}
+                title={<TabTitleText>Collections</TabTitleText>}
+                tabContentId="refTab3Section"
+                tabContentRef={this.contentRef3}
+              />
+              <Tab
+                eventKey={3}
+                title={<TabTitleText>Examples</TabTitleText>}
+                tabContentId="refTab4Section"
+                tabContentRef={this.contentRef4}
+              />
+              <Tab
+                eventKey={4}
+                title={<TabTitleText>Documenation</TabTitleText>}
+                tabContentId="refTab5Section"
+                tabContentRef={this.contentRef5}
+              />
+            </Tabs>
+            
+            
+            <Button variant="plain" component="a" href="https://github.com/" target="_blank">Github Link</Button> 
+            
+            
+            <Button variant="plain" component="a" href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</Button>
+            
+            
+          </MastheadContent>
+        </Masthead>
         <div>
           <TabContent
             /* Home */
@@ -148,53 +149,53 @@ class SeparateTabs extends React.Component {
             hidden
           >
             <Gallery hasGutter>
-            <Card isCompact>
-              <CardTitle> Tab 1 Card </CardTitle>
-              <CardBody> Tab 1 Card Body</CardBody>
-              <CardFooter>Tab 1 Card footer</CardFooter> 
-            </Card>
+              <Card isCompact>
+                <CardTitle> Tab 1 Card </CardTitle>
+                <CardBody> Tab 1 Card Body</CardBody>
+                <CardFooter>Tab 1 Card footer</CardFooter>
+              </Card>
 
-            <Card isCompact>
-              <CardTitle> Tab 1 Card </CardTitle>
-              <CardBody> Tab 1 Card Body</CardBody>
-              <CardFooter>Tab 1 Card footer</CardFooter> 
-            </Card>
+              <Card isCompact>
+                <CardTitle> Tab 1 Card </CardTitle>
+                <CardBody> Tab 1 Card Body</CardBody>
+                <CardFooter>Tab 1 Card footer</CardFooter>
+              </Card>
 
-            <Card isCompact>
-              <CardTitle> Tab 1 Card </CardTitle>
-              <CardBody> Tab 1 Card Body</CardBody>
-              <CardFooter>Tab 1 Card footer</CardFooter> 
-            </Card>
+              <Card isCompact>
+                <CardTitle> Tab 1 Card </CardTitle>
+                <CardBody> Tab 1 Card Body</CardBody>
+                <CardFooter>Tab 1 Card footer</CardFooter>
+              </Card>
 
-            <Card isCompact>
-              <CardTitle> Tab 1 Card </CardTitle>
-              <CardBody> Tab 1 Card Body</CardBody>
-              <CardFooter>Tab 1 Card footer</CardFooter> 
-            </Card>
+              <Card isCompact>
+                <CardTitle> Tab 1 Card </CardTitle>
+                <CardBody> Tab 1 Card Body</CardBody>
+                <CardFooter>Tab 1 Card footer</CardFooter>
+              </Card>
 
-            <Card isCompact>
-              <CardTitle> Tab 1 Card </CardTitle>
-              <CardBody> Tab 1 Card Body</CardBody>
-              <CardFooter>Tab 1 Card footer</CardFooter> 
-            </Card>
+              <Card isCompact>
+                <CardTitle> Tab 1 Card </CardTitle>
+                <CardBody> Tab 1 Card Body</CardBody>
+                <CardFooter>Tab 1 Card footer</CardFooter>
+              </Card>
 
-            <Card isCompact>
-              <CardTitle> Tab 1 Card </CardTitle>
-              <CardBody> Tab 1 Card Body</CardBody>
-              <CardFooter>Tab 1 Card footer</CardFooter> 
-            </Card>
+              <Card isCompact>
+                <CardTitle> Tab 1 Card </CardTitle>
+                <CardBody> Tab 1 Card Body</CardBody>
+                <CardFooter>Tab 1 Card footer</CardFooter>
+              </Card>
 
-            <Card isCompact>
-              <CardTitle> Tab 1 Card </CardTitle>
-              <CardBody> Tab 1 Card Body</CardBody>
-              <CardFooter>Tab 1 Card footer</CardFooter> 
-            </Card>
+              <Card isCompact>
+                <CardTitle> Tab 1 Card </CardTitle>
+                <CardBody> Tab 1 Card Body</CardBody>
+                <CardFooter>Tab 1 Card footer</CardFooter>
+              </Card>
 
-            <Card isCompact>
-              <CardTitle> Tab 1 Card </CardTitle>
-              <CardBody> Tab 1 Card Body</CardBody>
-              <CardFooter>Tab 1 Card footer</CardFooter> 
-            </Card>
+              <Card isCompact>
+                <CardTitle> Tab 1 Card </CardTitle>
+                <CardBody> Tab 1 Card Body</CardBody>
+                <CardFooter>Tab 1 Card footer</CardFooter>
+              </Card>
 
             </Gallery>
           </TabContent>
@@ -227,12 +228,12 @@ class SeparateTabs extends React.Component {
 function App() {
   return (
     <span>
-    <SeparateTabs />
-    <footer class="footer">&#169; Copyright 2022, Red Hat</footer>
-    </span>  
+      <SeparateTabs />
+      <footer class="footer">&#169; Copyright 2022, Red Hat</footer>
+    </span>
   );
 }
 
-export default App; 
+export default App;
 
 //
