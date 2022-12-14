@@ -4,9 +4,10 @@ import "@patternfly/react-core/dist/styles/base.css";
 import {
   Button,
   Card,
+  CardBody,
   Page,
   Masthead,
-  MastheadToggle,
+  MastheadToggle, 
   MastheadMain,
   MastheadBrand,
   MastheadContent,
@@ -25,6 +26,10 @@ import {
   TabContent,
   TabTitleText,
   Tooltip,
+  CardTitle,
+  CardFooter,
+  Gallery,
+  Split,
 } from '@patternfly/react-core'
 
 import {
@@ -60,11 +65,6 @@ class SeparateTabs extends React.Component {
     return (
       <React.Fragment>
       <Masthead id="basic-example">
-        <MastheadToggle>
-          <Button variant="plain" onClick={() => { }} aria-label="Global navigation">
-            <BarsIcon />
-          </Button>
-        </MastheadToggle>
         <MastheadContent>
           <Tabs
             activeKey={this.state.activeTabKey}
@@ -114,7 +114,13 @@ class SeparateTabs extends React.Component {
             ref={this.contentRef1}
             aria-label="This is content for the first separate content tab"
           >
-            Tab 1 section
+            
+            
+
+            
+            
+            
+
           </TabContent>
           <TabContent
             /* Overview */
@@ -134,7 +140,56 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the third separate content tab"
             hidden
           >
-            Tab content
+            <Gallery hasGutter>
+            <Card isCompact>
+              <CardTitle> Tab 1 Card </CardTitle>
+              <CardBody> Tab 1 Card Body</CardBody>
+              <CardFooter>Tab 1 Card footer</CardFooter> 
+            </Card>
+
+            <Card isCompact>
+              <CardTitle> Tab 1 Card </CardTitle>
+              <CardBody> Tab 1 Card Body</CardBody>
+              <CardFooter>Tab 1 Card footer</CardFooter> 
+            </Card>
+
+            <Card isCompact>
+              <CardTitle> Tab 1 Card </CardTitle>
+              <CardBody> Tab 1 Card Body</CardBody>
+              <CardFooter>Tab 1 Card footer</CardFooter> 
+            </Card>
+
+            <Card isCompact>
+              <CardTitle> Tab 1 Card </CardTitle>
+              <CardBody> Tab 1 Card Body</CardBody>
+              <CardFooter>Tab 1 Card footer</CardFooter> 
+            </Card>
+
+            <Card isCompact>
+              <CardTitle> Tab 1 Card </CardTitle>
+              <CardBody> Tab 1 Card Body</CardBody>
+              <CardFooter>Tab 1 Card footer</CardFooter> 
+            </Card>
+
+            <Card isCompact>
+              <CardTitle> Tab 1 Card </CardTitle>
+              <CardBody> Tab 1 Card Body</CardBody>
+              <CardFooter>Tab 1 Card footer</CardFooter> 
+            </Card>
+
+            <Card isCompact>
+              <CardTitle> Tab 1 Card </CardTitle>
+              <CardBody> Tab 1 Card Body</CardBody>
+              <CardFooter>Tab 1 Card footer</CardFooter> 
+            </Card>
+
+            <Card isCompact>
+              <CardTitle> Tab 1 Card </CardTitle>
+              <CardBody> Tab 1 Card Body</CardBody>
+              <CardFooter>Tab 1 Card footer</CardFooter> 
+            </Card>
+
+            </Gallery>
           </TabContent>
           <TabContent
             /* Examples */
