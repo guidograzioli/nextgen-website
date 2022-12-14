@@ -59,3 +59,15 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+.span { 
+  float: right; 
+  width: 400px; 
+}
+
+.Split {
+  background: #000000;  
+}
+
+.Tabs {
+  color:rgba(255, 255, 255, 0.301)
+}
