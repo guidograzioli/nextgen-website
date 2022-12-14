@@ -66,24 +66,26 @@ class SeparateTabs extends React.Component {
     };
   }
 
+
   render() {
     return (
       <React.Fragment>
-        <Masthead id="basic-example">
-          <MastheadContent>
+        <Split hasGutter className="Split">       
+          <SplitItem isFilled hasGutter> 
             <Tabs
-              activeKey={this.state.activeTabKey}
+              activeKey={this.state.activeTabKey} 
               onSelect={this.handleTabClick}
               aria-label="Tabs in the seperate content example"
               role="region"
-              
+
             >
               <Tab
                 eventKey={0}
                 title={<TabTitleText>Home</TabTitleText>}
                 tabContentId="refTab1Section"
                 tabContentRef={this.contentRef1}
-                
+                 
+
               >
               </Tab>
               <Tab
@@ -111,16 +113,12 @@ class SeparateTabs extends React.Component {
                 tabContentRef={this.contentRef5}
               />
             </Tabs>
-            
-            
-            <Button variant="plain" component="a" href="https://github.com/" target="_blank">Github Link</Button> 
-            
-            
-            <Button variant="plain" component="a" href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</Button>
-            
-            
-          </MastheadContent>
-        </Masthead>
+          </SplitItem>
+          <SplitItem>
+            <Button variant="primary" component="a" href="https://github.com/" target="_blank">Github Link</Button>
+            <Button variant="primary" component="a" href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</Button>
+          </SplitItem>
+        </Split>
         <div>
           <TabContent
             /* Home */
@@ -128,6 +126,7 @@ class SeparateTabs extends React.Component {
             id="refTab1Section"
             ref={this.contentRef1}
             aria-label="This is content for the first separate content tab"
+            className="Tabs"
           >
           </TabContent>
           <TabContent
