@@ -1,10 +1,13 @@
 import React from 'react';
 import "@patternfly/react-core/dist/styles/base.css";
+import "@patternfly/patternfly/patternfly.css"
 
 import {
   Button,
   Card,
   CardBody,
+  Flex,
+  FlexItem,
   Grid,
   Page,
   Masthead,
@@ -17,6 +20,8 @@ import {
   PageSectionVariants,
   PageToggleButton,
   Pagination,
+  Title,
+  TitleSizes,
   Toolbar,
   ToolbarContent,
   ToolbarGroup,
@@ -35,6 +40,7 @@ import {
   GalleryItem,
   GridItem,
   SplitItem,
+  Bullseye,
 } from '@patternfly/react-core'
 
 import {
@@ -129,6 +135,14 @@ class SeparateTabs extends React.Component {
             ref={this.contentRef1}
             aria-label="This is content for the first separate content tab"
           >
+            <Bullseye>
+              <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
+            </Bullseye>
+            <Bullseye>
+                <Bullseye>
+                  Bringing the power of Ansible Automation to Red Hat Middleware
+                </Bullseye>
+            </Bullseye>
           </TabContent>
           <TabContent
             /* Overview */
