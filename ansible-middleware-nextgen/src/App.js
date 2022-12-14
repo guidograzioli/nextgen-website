@@ -1,10 +1,13 @@
 import React from 'react';
 import "@patternfly/react-core/dist/styles/base.css";
+import "@patternfly/patternfly/patternfly.css"
 
 import {
   Button,
   Card,
   CardBody,
+  Flex,
+  FlexItem,
   Grid,
   Page,
   Masthead,
@@ -17,6 +20,8 @@ import {
   PageSectionVariants,
   PageToggleButton,
   Pagination,
+  Title,
+  TitleSizes,
   Toolbar,
   ToolbarContent,
   ToolbarGroup,
@@ -35,6 +40,7 @@ import {
   GalleryItem,
   GridItem,
   SplitItem,
+  Bullseye,
 } from '@patternfly/react-core'
 
 import {
@@ -128,6 +134,29 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the first separate content tab"
             className="Tabs"
           >
+            <Flex className='homepage' direction={{ default: 'column' }}>
+              <FlexItem align={{ default: 'alignCenter' }}>
+                <Bullseye>
+                  <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
+                </Bullseye>
+              </FlexItem>
+              <FlexItem>
+                <Bullseye>
+                  Bringing the power of Ansible Automation to Red Hat Middleware
+                </Bullseye>
+              </FlexItem>
+              <FlexItem align={{ default: 'alignRight' }}>
+                <Button
+                  //onClick = {this.handleTabClick(1, 1)}
+                  onClick={ () => this.setState({
+                    activeTabKey: 1
+                  })}
+                  
+                >
+                  Learn more
+                </Button>
+              </FlexItem>
+            </Flex>
           </TabContent>
           <TabContent
             /* Overview */
@@ -228,7 +257,7 @@ function App() {
   return (
     <span>
       <SeparateTabs />
-      <footer class="footer">&#169; Copyright 2022, Red Hat</footer>
+      <footer className="footer">&#169; Copyright 2022, Red Hat</footer>
     </span>
   );
 }
