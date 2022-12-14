@@ -44,6 +44,8 @@ class SeparateTabs extends React.Component {
     this.contentRef1 = React.createRef();
     this.contentRef2 = React.createRef();
     this.contentRef3 = React.createRef();
+    this.contentRef4 = React.createRef();
+    this.contentRef5 = React.createRef();
 
     // Toggle currently active tab
     this.handleTabClick = (event, tabIndex) => {
@@ -97,8 +99,8 @@ class SeparateTabs extends React.Component {
             <Tab
               eventKey={4}
               title={<TabTitleText>Documenation</TabTitleText>}
-              tabContentId="refTab6Section"
-              tabContentRef={this.contentRef6}
+              tabContentId="refTab5Section"
+              tabContentRef={this.contentRef5}
             />
           </Tabs>
         </MastheadContent>
@@ -136,8 +138,8 @@ class SeparateTabs extends React.Component {
           <TabContent
             /* Examples */
             eventKey={3}
-            id="refTab3Section"
-            ref={this.contentRef3}
+            id="refTab4Section"
+            ref={this.contentRef4}
             aria-label="This is content for the third separate content tab"
             hidden
           >
@@ -146,12 +148,12 @@ class SeparateTabs extends React.Component {
           <TabContent
             /* Documentation */
             eventKey={4}
-            id="refTab3Section"
-            ref={this.contentRef3}
+            id="refTab5Section"
+            ref={this.contentRef5}
             aria-label="This is content for the third separate content tab"
             hidden
           >
-            Tab 3 section
+            Tab 5 section
           </TabContent>
         </div>
       </React.Fragment>
