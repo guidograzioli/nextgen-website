@@ -18,6 +18,7 @@ import {
   Pagination,
   Toolbar,
   ToolbarContent,
+  ToolbarGroup,
   ToolbarItem,
   Stack,
   StackItem,
@@ -104,6 +105,19 @@ class SeparateTabs extends React.Component {
               tabContentRef={this.contentRef5}
             />
           </Tabs>
+          <Toolbar id="toolbar" isFullHeight isStatic>
+            <ToolbarContent>
+              <ToolbarGroup
+                variant="icon-button-group"
+                alignment={{ default: 'alignRight' }}
+                spacer={{ default: 'spacerNone', md: 'spacerMd' }}
+              >
+                <ToolbarItem>
+                  <Button>I am a button</Button>
+                </ToolbarItem>
+              </ToolbarGroup>
+            </ToolbarContent>
+          </Toolbar>
         </MastheadContent>
       </Masthead>
         <div>
@@ -114,13 +128,6 @@ class SeparateTabs extends React.Component {
             ref={this.contentRef1}
             aria-label="This is content for the first separate content tab"
           >
-            
-            
-
-            
-            
-            
-
           </TabContent>
           <TabContent
             /* Overview */
@@ -227,3 +234,5 @@ function App() {
 }
 
 export default App; 
+
+//
