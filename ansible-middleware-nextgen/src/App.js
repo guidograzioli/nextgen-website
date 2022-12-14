@@ -78,6 +78,7 @@ class SeparateTabs extends React.Component {
         <Masthead id="basic-example">
           <MastheadContent>
             <Tabs
+              mountOnEnter
               activeKey={this.state.activeTabKey}
               onSelect={this.handleTabClick}
               aria-label="Tabs in the seperate content example"
@@ -135,14 +136,29 @@ class SeparateTabs extends React.Component {
             ref={this.contentRef1}
             aria-label="This is content for the first separate content tab"
           >
-            <Bullseye>
-              <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
-            </Bullseye>
-            <Bullseye>
+            <Flex className='homepage' direction={{ default: 'column' }}>
+              <FlexItem align={{ default: 'alignCenter' }}>
+                <Bullseye>
+                  <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
+                </Bullseye>
+              </FlexItem>
+              <FlexItem>
                 <Bullseye>
                   Bringing the power of Ansible Automation to Red Hat Middleware
                 </Bullseye>
-            </Bullseye>
+              </FlexItem>
+              <FlexItem align={{ default: 'alignRight' }}>
+                <Button
+                  //onClick = {this.handleTabClick(1, 1)}
+                  onClick={ () => this.setState({
+                    activeTabKey: 1
+                  })}
+                  
+                >
+                  Learn more
+                </Button>
+              </FlexItem>
+            </Flex>
           </TabContent>
           <TabContent
             /* Overview */
@@ -243,7 +259,7 @@ function App() {
   return (
     <span>
       <SeparateTabs />
-      <footer class="footer">&#169; Copyright 2022, Red Hat</footer>
+      <footer className="footer">&#169; Copyright 2022, Red Hat</footer>
     </span>
   );
 }
