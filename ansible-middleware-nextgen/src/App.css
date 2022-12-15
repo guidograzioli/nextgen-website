@@ -66,9 +66,17 @@
 }
 
 .Split {
-  background: #000000;  
+  background: #000000;   
 }
 
 .Tab-text {
   color:rgb(255, 255, 255)
+}
+
+.Button-color {
+  background-color: rgb(0, 0, 0)   
+}
+
+.Icon-color {
+  color: #ffffff;
 }

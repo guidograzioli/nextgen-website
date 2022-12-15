@@ -41,12 +41,15 @@ import {
   GridItem,
   SplitItem,
   Bullseye,
+  EmptyStatePrimary,
 } from '@patternfly/react-core'
 
 import {
   TimesIcon
 } from '@patternfly/react-icons';
 import BarsIcon from '@patternfly/react-icons/dist/esm/icons/bars-icon';
+import GithubIcon from '@patternfly/react-icons/dist/esm/icons/github-icon'; 
+import AnisbleIcon from '@patternfly/react-icons/dist/esm/icons/ansible-tower-icon'; 
 import logo from './logo.svg';
 import './App.css';
 
@@ -120,8 +123,10 @@ class SeparateTabs extends React.Component {
             </Tabs>
           </SplitItem>
           <SplitItem>
-            <Button variant="primary" component="a" href="https://github.com/" target="_blank">Github Link</Button>
-            <Button variant="primary" component="a" href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</Button>
+            <Button className="Button-color" variant="link" icon={<GithubIcon size="lg" className="Icon-color"/>} component="a" href="https://github.com/ansible-middleware/" target="_blank" hasGutter></Button>
+            &nbsp;
+            &nbsp;
+            <Button className="Button-color" variant="link" icon={<AnisbleIcon size="lg" className="Icon-color"/>} component="a" href="https://galaxy.ansible.com/" target="_blank"hasGutter></Button>
           </SplitItem>
         </Split>
         <div>
