@@ -256,7 +256,7 @@ function App() {
   return (
     <span>
       <SeparateTabs />
-      <footer className="footer">&#169; Copyright 2022, Red Hat</footer>
+      <footer className="footer">&#169; 2022 - Ansible for Middleware</footer>
     </span>
   );
 }
