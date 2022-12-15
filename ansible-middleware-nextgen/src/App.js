@@ -87,34 +87,33 @@ class SeparateTabs extends React.Component {
             >
               <Tab
                 eventKey={0}
-                title={<TabTitleText>Home</TabTitleText>}
+                title={<TabTitleText className="Tab-text">Home</TabTitleText>}
                 tabContentId="refTab1Section"
-                tabContentRef={this.contentRef1}
-                 
+                tabContentRef={this.contentRef1}                
 
               >
               </Tab>
               <Tab
                 eventKey={1}
-                title={<TabTitleText>Overview</TabTitleText>}
+                title={<TabTitleText className="Tab-text">Overview</TabTitleText>}
                 tabContentId="refTab2Section"
                 tabContentRef={this.contentRef2}
               />
               <Tab
                 eventKey={2}
-                title={<TabTitleText>Collections</TabTitleText>}
+                title={<TabTitleText className="Tab-text">Collections</TabTitleText>}
                 tabContentId="refTab3Section"
                 tabContentRef={this.contentRef3}
               />
               <Tab
                 eventKey={3}
-                title={<TabTitleText>Examples</TabTitleText>}
+                title={<TabTitleText className="Tab-text">Examples</TabTitleText>}
                 tabContentId="refTab4Section"
                 tabContentRef={this.contentRef4}
               />
               <Tab
                 eventKey={4}
-                title={<TabTitleText>Documenation</TabTitleText>}
+                title={<TabTitleText className="Tab-text">Documenation</TabTitleText>}
                 tabContentId="refTab5Section"
                 tabContentRef={this.contentRef5}
               />
