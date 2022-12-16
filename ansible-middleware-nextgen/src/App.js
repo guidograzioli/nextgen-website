@@ -172,7 +172,55 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the second separate content tab"
             hidden
           >
-            Tab 2 section
+            <Flex className="Overview-padding" direction={{ default: "column" }}>
+              <FlexItem>
+                
+                <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
+                <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
+                  <center>
+                    <CardBody className='Overview-card-body'>A few sentences providing an overview of the Ansible Middleware Project</CardBody>
+                  </center>
+                </Card>
+                  
+              </FlexItem>
+              <FlexItem>
+
+                <Title headingLevel="h1" size={TitleSizes['4xl']}>Use Cases</Title>
+                <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
+                  <center>
+                    <CardBody className='Overview-card-body'>
+                      <Stack hasGutter>
+                        <StackItem>Ansible Middleware can be used to solve a lot of key challenges...</StackItem>
+                        <StackItem isFilled>
+                          <Flex justifyContent={{ default: 'justifyContentSpaceBetween' }}>
+                            <FlexItem>
+                              <Stack>
+                                <StackItem><AnisbleIcon size="lg" /></StackItem>
+                                <StackItem>Example</StackItem>
+                              </Stack>
+                            </FlexItem>
+                            <FlexItem>
+                              <Stack>
+                                <StackItem><AnisbleIcon size="lg" /></StackItem>
+                                <StackItem>Example</StackItem>
+                              </Stack>
+                            </FlexItem>
+                            <FlexItem>
+                              <Stack>
+                                <StackItem><AnisbleIcon size="lg" /></StackItem>
+                                <StackItem>Example</StackItem>
+                              </Stack>
+                            </FlexItem>
+                          </Flex>
+                        </StackItem>
+                      </Stack>
+                    </CardBody>
+                  </center>
+                </Card>
+
+              </FlexItem>
+
+            </Flex>
           </TabContent>
           <TabContent
             /* Collections */
