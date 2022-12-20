@@ -46,6 +46,9 @@ import {
   LevelItem,
 } from '@patternfly/react-core'
 
+import { UseEffectScroll } from 'react-use-smooth-scroll'
+import 'react-use-smooth-scroll/dist/index.css'
+
 import {
   TimesIcon
 } from '@patternfly/react-icons';
@@ -78,6 +81,9 @@ class SeparateTabs extends React.Component {
     };
   }
 
+  function reveal() {
+    
+  }
 
   render() {
     return (
@@ -173,8 +179,8 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the second separate content tab"
             hidden
           >
-            <Flex className="Overview-padding" direction={{ default: "column" }}>
-              <FlexItem>
+            <Flex className="Overview-container" direction={{ default: "column" }}>
+              <FlexItem clasName="Overview-item">
                 
                 <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
                 <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
@@ -184,7 +190,7 @@ class SeparateTabs extends React.Component {
                 </Card>
                   
               </FlexItem>
-              <FlexItem>
+              <FlexItem clasName="Overview-item">
 
                 <Title headingLevel="h1" size={TitleSizes['4xl']}>Use Cases</Title>
                 <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
@@ -220,7 +226,7 @@ class SeparateTabs extends React.Component {
                 </Card>
 
               </FlexItem>
-              <FlexItem>
+              <FlexItem clasName="Overview-item">
               
                 <Title headingLevel="h1" size={TitleSizes['4xl']}>Technologies</Title>
                 <Flex>
@@ -243,7 +249,7 @@ class SeparateTabs extends React.Component {
 
               </FlexItem>
               <hr></hr>
-              <FlexItem>
+              <FlexItem clasName="Overview-item">
                 <Title headingLevel="h1" size={TitleSizes['4xl']}>Getting Started</Title>
                 <Stack hasGutter>
                   <StackItem><Bullseye><AnisbleIcon size="xl"/></Bullseye></StackItem>
