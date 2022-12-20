@@ -44,7 +44,7 @@
   height:30px;
   text-align: center;
   min-width: 100%;
-  background: rgba(128, 128, 128, 0.301);
+  background: rgb(196, 196, 196);
 }
 
 .topbar{
@@ -85,6 +85,8 @@
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 10px;
+  max-width: 100em;
+  margin: auto;
 }
 
 .Overview-card {

@@ -53,6 +53,7 @@ import BarsIcon from '@patternfly/react-icons/dist/esm/icons/bars-icon';
 import GithubIcon from '@patternfly/react-icons/dist/esm/icons/github-icon'; 
 import AnisbleIcon from '@patternfly/react-icons/dist/esm/icons/ansible-tower-icon'; 
 import logo from './logo.svg';
+//import redHatRuntimeLogo from './images/red-hat-runtime-logo.svg';
 import './App.css';
 
 
@@ -219,7 +220,51 @@ class SeparateTabs extends React.Component {
                 </Card>
 
               </FlexItem>
+              <FlexItem>
+              
+                <Title headingLevel="h1" size={TitleSizes['4xl']}>Technologies</Title>
+                <Flex>
+                  <FlexItem>
+                    <AnisbleIcon size="xl" />
+                  </FlexItem>
+                  <FlexItem>
+                    <Title headingLevel="h2">Ansible</Title>
+                    Long form description of Ansible 
+                  </FlexItem>
+               </Flex>
+               <Flex>
+                <FlexItem>
+                  <AnisbleIcon size="xl" />
+                </FlexItem>
+                <FlexItem>
+                  <Title headingLevel='h2'>Red Hat Runtimes</Title>
+                </FlexItem>
+               </Flex>
 
+              </FlexItem>
+              <hr></hr>
+              <FlexItem>
+                <Title headingLevel="h1" size={TitleSizes['4xl']}>Getting Started</Title>
+                <Stack hasGutter>
+                  <StackItem><Bullseye><AnisbleIcon size="xl"/></Bullseye></StackItem>
+                  <StackItem><center>
+                    Insert text saying how easy it is to get started and reference the guides and collections and documentation we have avalable
+                  </center></StackItem>
+                  <StackItem>
+                    <Flex justifyContent={{ default: 'justifyContentSpaceBetween' }}>
+                      <FlexItem>
+                        <Button>Getting Started Guide</Button>
+                      </FlexItem>
+                      <FlexItem>
+                        <Button>View the Collections</Button>
+                      </FlexItem>
+                      <FlexItem>
+                        <Button>Explore the Documenation</Button>
+                      </FlexItem>
+                    </Flex>
+                  </StackItem>
+                </Stack>
+              </FlexItem>
             </Flex>
           </TabContent>
           <TabContent
