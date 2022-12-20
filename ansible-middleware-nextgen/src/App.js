@@ -46,8 +46,7 @@ import {
   LevelItem,
 } from '@patternfly/react-core'
 
-import { UseEffectScroll } from 'react-use-smooth-scroll'
-import 'react-use-smooth-scroll/dist/index.css'
+import Overview from './Overview';
 
 import {
   TimesIcon
@@ -58,7 +57,6 @@ import AnisbleIcon from '@patternfly/react-icons/dist/esm/icons/ansible-tower-ic
 import logo from './logo.svg';
 //import redHatRuntimeLogo from './images/red-hat-runtime-logo.svg';
 import './App.css';
-
 
 class SeparateTabs extends React.Component {
   constructor(props) {
@@ -79,10 +77,6 @@ class SeparateTabs extends React.Component {
         activeTabKey: tabIndex
       });
     };
-  }
-
-  function reveal() {
-    
   }
 
   render() {
@@ -179,99 +173,8 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the second separate content tab"
             hidden
           >
-            <Flex className="Overview-container" direction={{ default: "column" }}>
-              <FlexItem clasName="Overview-item">
-                
-                <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
-                <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
-                  <center>
-                    <CardBody className='Overview-card-body'>A few sentences providing an overview of the Ansible Middleware Project</CardBody>
-                  </center>
-                </Card>
-                  
-              </FlexItem>
-              <FlexItem clasName="Overview-item">
-
-                <Title headingLevel="h1" size={TitleSizes['4xl']}>Use Cases</Title>
-                <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
-                  <center>
-                    <CardBody className='Overview-card-body'>
-                      <Stack hasGutter>
-                        <StackItem>Ansible Middleware can be used to solve a lot of key challenges...</StackItem>
-                        <StackItem isFilled>
-                          <Flex justifyContent={{ default: 'justifyContentSpaceBetween' }}>
-                            <FlexItem>
-                              <Stack>
-                                <StackItem><AnisbleIcon size="lg" /></StackItem>
-                                <StackItem>Example</StackItem>
-                              </Stack>
-                            </FlexItem>
-                            <FlexItem>
-                              <Stack>
-                                <StackItem><AnisbleIcon size="lg" /></StackItem>
-                                <StackItem>Example</StackItem>
-                              </Stack>
-                            </FlexItem>
-                            <FlexItem>
-                              <Stack>
-                                <StackItem><AnisbleIcon size="lg" /></StackItem>
-                                <StackItem>Example</StackItem>
-                              </Stack>
-                            </FlexItem>
-                          </Flex>
-                        </StackItem>
-                      </Stack>
-                    </CardBody>
-                  </center>
-                </Card>
-
-              </FlexItem>
-              <FlexItem clasName="Overview-item">
-              
-                <Title headingLevel="h1" size={TitleSizes['4xl']}>Technologies</Title>
-                <Flex>
-                  <FlexItem>
-                    <AnisbleIcon size="xl" />
-                  </FlexItem>
-                  <FlexItem>
-                    <Title headingLevel="h2">Ansible</Title>
-                    Long form description of Ansible 
-                  </FlexItem>
-               </Flex>
-               <Flex>
-                <FlexItem>
-                  <AnisbleIcon size="xl" />
-                </FlexItem>
-                <FlexItem>
-                  <Title headingLevel='h2'>Red Hat Runtimes</Title>
-                </FlexItem>
-               </Flex>
-
-              </FlexItem>
-              <hr></hr>
-              <FlexItem clasName="Overview-item">
-                <Title headingLevel="h1" size={TitleSizes['4xl']}>Getting Started</Title>
-                <Stack hasGutter>
-                  <StackItem><Bullseye><AnisbleIcon size="xl"/></Bullseye></StackItem>
-                  <StackItem><center>
-                    Insert text saying how easy it is to get started and reference the guides and collections and documentation we have avalable
-                  </center></StackItem>
-                  <StackItem>
-                    <Flex justifyContent={{ default: 'justifyContentSpaceBetween' }}>
-                      <FlexItem>
-                        <Button>Getting Started Guide</Button>
-                      </FlexItem>
-                      <FlexItem>
-                        <Button>View the Collections</Button>
-                      </FlexItem>
-                      <FlexItem>
-                        <Button>Explore the Documenation</Button>
-                      </FlexItem>
-                    </Flex>
-                  </StackItem>
-                </Stack>
-              </FlexItem>
-            </Flex>
+            <div className='Overview-top-spacing'></div>
+            <Overview />
           </TabContent>
           <TabContent
             /* Collections */
@@ -347,7 +250,7 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the third separate content tab"
             hidden
           >
-            Tab 4 section
+            Tab 4 Section
           </TabContent>
           <TabContent
             /* Documentation */

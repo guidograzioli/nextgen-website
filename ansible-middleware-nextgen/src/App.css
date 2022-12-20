@@ -90,22 +90,19 @@
 }
 
 .Overview-card {
-  min-height: 100px;
+  height: 40vh;
   /* Centering children vertically and horizontally */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Overview page scroll to review */
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
+.Overview-top-spacing {
+  width: 100%;
+  height: 20vh;
 }
 
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
+.box {
+  height: 100vh;
+  width: 100vw;
 }
