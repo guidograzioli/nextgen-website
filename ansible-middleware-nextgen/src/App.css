@@ -102,6 +102,11 @@
   height: 20vh;
 }
 
+/* spacing for lines of text and images in the overview */
+.Overview-item-padding {
+  padding-bottom: 30px;
+}
+
 .box {
   height: 100vh;
   width: 100vw;

@@ -68,8 +68,7 @@ export default function Overview() {
             <center>
             <CardBody className='Overview-card-body'>
                 <Stack hasGutter>
-                <StackItem>Ansible Middleware can be used to solve a lot of key challenges...</StackItem>
-                <StackItem isFilled><spacer></spacer></StackItem>
+                <StackItem className='Overview-item-padding'>Ansible Middleware can be used to solve a lot of key challenges...</StackItem>
                 <StackItem>
                     <Flex justifyContent={{ default: 'justifyContentSpaceBetween' }}>
                     <FlexItem>
@@ -99,14 +98,14 @@ export default function Overview() {
       </Box>
 
       <Box>
-        <Title headingLevel="h1" size={TitleSizes['4xl']}>Technologies</Title>
+        <Title headingLevel="h1" size={TitleSizes['4xl']} className='Overview-item-padding'>Technologies</Title>
         <Flex>
             <FlexItem>
             <AnisbleIcon size="xl" />
             </FlexItem>
-            <FlexItem>
+            <FlexItem className='Overview-item-padding'>
             <Title headingLevel="h2">Ansible</Title>
-            Long form description of Ansible 
+            <p className='Overview-item-padding'>Long form description of Ansible</p>
             </FlexItem>
         </Flex>
         <Flex hasGutter>
@@ -121,13 +120,13 @@ export default function Overview() {
       </Box>
 
       <Box>
-        <Title headingLevel="h1" size={TitleSizes['4xl']}>Getting Started</Title>
+        <Title headingLevel="h1" size={TitleSizes['4xl']} className='Overview-item-padding'>Getting Started</Title>
         <Stack hasGutter>
-            <StackItem><Bullseye><AnisbleIcon size="xl"/></Bullseye></StackItem>
-            <StackItem><center>
+            <StackItem className='Overview-item-padding'><Bullseye><AnisbleIcon size="xl"/></Bullseye></StackItem>
+            <StackItem className='Overview-item-padding'><center>
             Insert text saying how easy it is to get started and reference the guides and collections and documentation we have avalable
             </center></StackItem>
-            <StackItem>
+            <StackItem className='Overview-item-padding'>
             <Flex justifyContent={{ default: 'justifyContentSpaceBetween' }}>
                 <FlexItem>
                     <Button>Getting Started Guide</Button>
