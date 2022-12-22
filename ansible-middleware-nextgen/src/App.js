@@ -119,7 +119,7 @@ class SeparateTabs extends React.Component {
               />
               <Tab
                 eventKey={4}
-                title={<TabTitleText className="Tab-text">Documenation</TabTitleText>}
+                title={<TabTitleText className="Tab-text">Documentation</TabTitleText>}
                 tabContentId="refTab5Section"
                 tabContentRef={this.contentRef5}
               />
