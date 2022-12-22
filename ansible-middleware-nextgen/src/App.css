@@ -111,3 +111,7 @@
   height: 100vh;
   width: 100vw;
 }
+
+.learn-more-tab {
+  visibility: hidden;
+}

@@ -62,7 +62,8 @@ class SeparateTabs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeKey: 0
+      activeKey: 0,
+      homeHidden: false
     };
 
     this.contentRef1 = React.createRef();
@@ -74,7 +75,16 @@ class SeparateTabs extends React.Component {
     // Toggle currently active tab
     this.handleTabClick = (event, tabIndex) => {
       this.setState({
-        activeTabKey: tabIndex
+        activeTabKey: tabIndex,
+        homeHidden: false
+      });
+    };
+
+    // hide the homepage content when we switch to the Overview tab with the 'Learn More' button
+    this.handleLearnMoreClick = (event, tabIndex) => {
+      this.setState({
+        activeTabKey: tabIndex,
+        homeHidden: true
       });
     };
   }
@@ -95,8 +105,7 @@ class SeparateTabs extends React.Component {
                 eventKey={0}
                 title={<TabTitleText className="Tab-text">Home</TabTitleText>}
                 tabContentId="refTab1Section"
-                tabContentRef={this.contentRef1}                
-
+                tabContentRef={this.contentRef1}    
               >
               </Tab>
               <Tab
@@ -141,7 +150,7 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the first separate content tab"
             className="Tabs"
           >
-            <Flex className='homepage' direction={{ default: 'column' }}>
+            {!this.state.homeHidden && <Flex className='homepage' direction={{ default: 'column' }}>
               <FlexItem align={{ default: 'alignCenter' }}>
                 <Bullseye>
                   <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
@@ -153,17 +162,27 @@ class SeparateTabs extends React.Component {
                 </Bullseye>
               </FlexItem>
               <FlexItem align={{ default: 'alignRight' }}>
-                <Button
-                  //onClick = {this.handleTabClick(1, 1)}
-                  onClick={ () => this.setState({
-                    activeTabKey: 1
-                  })}
-                  
+                <Tabs
+                  /* Switch to the overview tab when we click the 'Learn More' button */
+                  activeKey={this.state.activeTabKey} 
+                  onSelect={this.handleLearnMoreClick}
+                  aria-label="Tabs in the seperate content example"
+                  role="region"
+                  hasBorderBottom={false}
+                  hasSecondaryBorderBottom={false}
                 >
-                  Learn more
-                </Button>
+                  <Tab
+                    //className='learn-more-tab'
+                    eventKey={1}
+                    title={<Button>Learn more</Button>}
+                    tabContentId="refTab2Section"
+                    tabContentRef={this.contentRef2}
+                    
+                  />
+                  
+                </Tabs>
               </FlexItem>
-            </Flex>
+            </Flex>}
           </TabContent>
           <TabContent
             /* Overview */

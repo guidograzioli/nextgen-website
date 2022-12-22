@@ -56,11 +56,11 @@ export default function Overview() {
     <Flex className="Overview-container" direction={{ default: "column" }}>
       <Box>
         <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
-            <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
-                <center>
-                <CardBody className='Overview-card-body'>A few sentences providing an overview of the Ansible Middleware Project</CardBody>
-                </center>
-            </Card>
+        <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
+            <center>
+            <CardBody className='Overview-card-body'>A few sentences providing an overview of the Ansible Middleware Project</CardBody>
+            </center>
+        </Card>
       </Box>
       <Box>
         <Title headingLevel="h1" size={TitleSizes['4xl']}>Use Cases</Title>
