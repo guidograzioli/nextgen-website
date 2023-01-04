@@ -47,6 +47,7 @@ import {
 } from '@patternfly/react-core'
 
 import Overview from './Overview';
+import Homepage from './Homepage';
 
 import {
   TimesIcon
@@ -152,14 +153,7 @@ class SeparateTabs extends React.Component {
           >
             {!this.state.homeHidden && <Flex className='homepage' direction={{ default: 'column' }}>
               <FlexItem align={{ default: 'alignCenter' }}>
-                <Bullseye>
-                  <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
-                </Bullseye>
-              </FlexItem>
-              <FlexItem>
-                <Bullseye>
-                  Bringing the power of Ansible Automation to Red Hat Middleware
-                </Bullseye>
+                <Homepage />
               </FlexItem>
               <FlexItem align={{ default: 'alignRight' }}>
                 <Tabs
