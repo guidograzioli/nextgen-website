@@ -76,19 +76,20 @@ class SeparateTabs extends React.Component {
 
     // Toggle currently active tab
     this.handleTabClick = (event, tabIndex) => {
-      this.setState({
-        activeTabKey: tabIndex,
-        homeHidden: false
-      });
+      // have to hide the homepage in the case the 'Learn More' button is clicked
+      if (tabIndex == 0) {
+        this.setState({
+          activeTabKey: tabIndex,
+          homeHidden: false
+        });
+      } else {
+        this.setState({
+          activeTabKey: tabIndex,
+          homeHidden: true
+        });
+      }
     };
 
-    // hide the homepage content when we switch to the Overview tab with the 'Learn More' button
-    this.handleLearnMoreClick = (event, tabIndex) => {
-      this.setState({
-        activeTabKey: tabIndex,
-        homeHidden: true
-      });
-    };
   }
 
   render() {
@@ -160,7 +161,7 @@ class SeparateTabs extends React.Component {
                 <Tabs
                   /* Switch to the overview tab when we click the 'Learn More' button */
                   activeKey={this.state.activeTabKey} 
-                  onSelect={this.handleLearnMoreClick}
+                  onSelect={this.handleTabClick}
                   aria-label="Tabs in the seperate content example"
                   role="region"
                   hasBorderBottom={false}
@@ -235,5 +236,3 @@ function App() {
 }
 
 export default App;
-
-//
