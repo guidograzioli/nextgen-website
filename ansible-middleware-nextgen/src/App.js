@@ -65,7 +65,8 @@ class SeparateTabs extends React.Component {
     super(props);
     this.state = {
       activeKey: 0,
-      homeHidden: false
+      homeHidden: false,
+      overviewHidden: true
     };
 
     this.contentRef1 = React.createRef();
@@ -77,17 +78,26 @@ class SeparateTabs extends React.Component {
     // Toggle currently active tab
     this.handleTabClick = (event, tabIndex) => {
       // have to hide the homepage in the case the 'Learn More' button is clicked
-      if (tabIndex == 0) {
+      if (tabIndex === 0) {
         this.setState({
           activeTabKey: tabIndex,
-          homeHidden: false
+          homeHidden: false,
+          overviewHidden: true
+        });
+      } else if (tabIndex === 1){
+        this.setState({
+          activeTabKey: tabIndex,
+          homeHidden: true,
+          overviewHidden: false
         });
       } else {
         this.setState({
           activeTabKey: tabIndex,
-          homeHidden: true
+          homeHidden: true,
+          overviewHidden: true
         });
       }
+      console.log(this.overviewHidden)
     };
 
   }
@@ -187,8 +197,13 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the second separate content tab"
             hidden
           >
-            <div className='Overview-top-spacing'></div>
-            <Overview />
+            <div>
+              {!this.state.overviewHidden && 
+              <Overview 
+                handleTabClick = {this.handleTabClick}
+                contentRef3 = {this.contentRef3}  
+              />}
+            </div>
           </TabContent>
           <TabContent
             /* Collections */
@@ -226,7 +241,7 @@ class SeparateTabs extends React.Component {
   }
 }
 
-// get the current year
+// get the current year for the footer
 const getCurrYear = () => {
   var today = new Date(),
   currYear = today.getFullYear();
@@ -234,7 +249,6 @@ const getCurrYear = () => {
 }
 
 function App() {
-  //var year = getCurrYear()
   return (
     <span>
       <SeparateTabs />
