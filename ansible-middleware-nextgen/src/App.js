@@ -226,11 +226,19 @@ class SeparateTabs extends React.Component {
   }
 }
 
+// get the current year
+const getCurrYear = () => {
+  var today = new Date(),
+  currYear = today.getFullYear();
+  return currYear;
+}
+
 function App() {
+  //var year = getCurrYear()
   return (
     <span>
       <SeparateTabs />
-      <footer className="footer">&#169; 2022 - Ansible for Middleware</footer>
+      <footer className="footer">&#169; {getCurrYear()} - Ansible for Middleware</footer>
     </span>
   );
 }
