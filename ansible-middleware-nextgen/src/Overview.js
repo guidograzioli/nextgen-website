@@ -146,7 +146,7 @@ class Overview extends React.Component {
               <StackItem className='Overview-item-padding'><center>
               Insert text saying how easy it is to get started and reference the guides and collections and documentation we have avalable
               </center></StackItem>
-              <StackItem className='Overview-item-padding'>
+              <Bullseye><StackItem className='Overview-item-padding'>
                 <Tabs
                     /* Switch to the overview tab when we click the 'Learn More' button */
                     activeKey={1} 
@@ -178,7 +178,7 @@ class Overview extends React.Component {
                       </FlexItem>
                   </Flex>
                 </Tabs>
-              </StackItem>
+              </StackItem></Bullseye>
           </Stack>
         </Box>
       </Flex>
