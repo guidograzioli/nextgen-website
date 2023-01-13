@@ -64,10 +64,11 @@ class Overview extends React.Component {
   // when we click a button in the last box change the tab we're on in the parent
   handleButtonClick = (event, tabIndex) => {
     this.props.handleTabClick(event, tabIndex);
-    // pass in content refs from parent
   }
 
+  // content refs for the collectoins and documentation tabs from app.js
   contentRef3 = this.props.contentRef3;
+  contentRef5 = this.props.contentRef5;
 
   render () {
     return (
@@ -168,7 +169,12 @@ class Overview extends React.Component {
                         />
                       </FlexItem>
                       <FlexItem>
-                          <Button>Explore the Documenation</Button>
+                          <Tab
+                            eventKey={4}
+                            title={<Button>Explore the Documenation</Button>}
+                            tabContentId="refTab5Section"
+                            tabContentRef={this.contentRef5}
+                          />
                       </FlexItem>
                   </Flex>
                 </Tabs>

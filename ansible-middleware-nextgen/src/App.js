@@ -201,7 +201,8 @@ class SeparateTabs extends React.Component {
               {!this.state.overviewHidden && 
               <Overview 
                 handleTabClick = {this.handleTabClick}
-                contentRef3 = {this.contentRef3}  
+                contentRef3 = {this.contentRef3}
+                contentRef5 = {this.contentRef5}
               />}
             </div>
           </TabContent>
