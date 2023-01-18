@@ -127,10 +127,11 @@ class Overview extends React.Component {
   
         <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']} className='Overview-item-padding'>Technologies</Title>
-          <Flex display={{ default: 'row' }}>
-              <FlexItem>
-                <AnisbleIcon size="xl" />
-              </FlexItem>
+          <Flex direction={{ default: 'row' }}>
+            <Flex>
+                <FlexItem><AnisbleIcon size="xl" /></FlexItem>
+            </Flex>
+              <Flex flex={{ default: 'flex_1' }}>
               <FlexItem className='Overview-item-padding'>
                 <Title headingLevel="h2">Ansible</Title>
                 <p className='Overview-item-padding'>
@@ -139,17 +140,22 @@ class Overview extends React.Component {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
               </FlexItem>
+            </Flex>
           </Flex>
-          <Flex hasGutter display={{ default: 'row' }}>
-              <FlexItem>
-                  <AnisbleIcon size="xl" />
-              </FlexItem>
-              <FlexItem>
-                  <Title headingLevel='h2'>Red Hat Runtimes</Title>
+          <Flex direction={{ default: 'row' }}>
+            <Flex>
+                <FlexItem><AnisbleIcon size="xl" /></FlexItem>
+            </Flex>
+              <Flex flex={{ default: 'flex_1' }}>
+              <FlexItem className='Overview-item-padding'>
+                <Title headingLevel="h2">Red Hat Runtimes</Title>
+                <p className='Overview-item-padding'>
                   Insert long form description of Red Hat Runtimes that we can get from the BU/Marketing including key links.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
               </FlexItem>
+            </Flex>
           </Flex>
         </Box>
   
