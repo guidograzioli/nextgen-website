@@ -95,29 +95,29 @@ class Overview extends React.Component {
                   <Stack hasGutter>
                   <StackItem className='Overview-item-padding'>Ansible Middleware can be used to solve a lot of key challenges...</StackItem>
                   <StackItem>
-                      <Flex direction={{ default: 'row' }} justifyContent={{ default: 'justifyContentSpaceBetween' }}>
-                        <FlexItem className='use_cases'>
-                          <Stack>
-                            <StackItem><AnisbleIcon size="lg" /></StackItem>
-                            <StackItem><b>Example</b></StackItem>
-                            <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
-                          </Stack>
-                        </FlexItem>
-                      <FlexItem className='use_cases'>
+                    <Flex direction={{ default: 'row' }} justifyContent={{ default: 'justifyContentSpaceBetween' }}>
+                      <FlexItem className='use-cases'>
+                        <Stack>
+                          <StackItem><AnisbleIcon size="lg" /></StackItem>
+                          <StackItem><b>Example</b></StackItem>
+                          <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
+                        </Stack>
+                      </FlexItem>
+                      <FlexItem className='use-cases'>
                           <Stack >
                             <StackItem><AnisbleIcon size="lg" /></StackItem>
                             <StackItem><b>Example</b></StackItem>
                             <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
                           </Stack>
                       </FlexItem>
-                      <FlexItem className='use_cases'>
+                      <FlexItem className='use-cases'>
                           <Stack>
                             <StackItem><AnisbleIcon size="lg" /></StackItem>
                             <StackItem><b>Example</b></StackItem>
                             <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
                           </Stack>
                       </FlexItem>
-                      </Flex>
+                    </Flex>
                   </StackItem>
                   </Stack>
               </CardBody>
@@ -127,22 +127,28 @@ class Overview extends React.Component {
   
         <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']} className='Overview-item-padding'>Technologies</Title>
-          <Flex display={{ default: 'inlineFlex' }}>
+          <Flex display={{ default: 'row' }}>
               <FlexItem>
                 <AnisbleIcon size="xl" />
               </FlexItem>
               <FlexItem className='Overview-item-padding'>
                 <Title headingLevel="h2">Ansible</Title>
-                <p className='Overview-item-padding'>Insert longform description of Ansible that we can get from the BU/Marketing including key links</p>
+                <p className='Overview-item-padding'>
+                  Insert long form description of Ansible that we can get from the BU/Marketing including key links.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
               </FlexItem>
           </Flex>
-          <Flex hasGutter display={{ default: 'inlineFlex' }}>
+          <Flex hasGutter display={{ default: 'row' }}>
               <FlexItem>
                   <AnisbleIcon size="xl" />
               </FlexItem>
               <FlexItem>
                   <Title headingLevel='h2'>Red Hat Runtimes</Title>
-                  Insert longform description of Red Hat Runtimes that we can get from the BU/Marketing including key links
+                  Insert long form description of Red Hat Runtimes that we can get from the BU/Marketing including key links.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </FlexItem>
           </Flex>
         </Box>
