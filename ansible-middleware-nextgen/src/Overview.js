@@ -78,7 +78,12 @@ class Overview extends React.Component {
           <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
           <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
               <center>
-              <CardBody className='Overview-card-body'>A few sentences providing an overview of the Ansible Middleware Project</CardBody>
+              <CardBody className='Overview-card-body'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </CardBody>
               </center>
           </Card>
         </Box>
@@ -90,23 +95,26 @@ class Overview extends React.Component {
                   <Stack hasGutter>
                   <StackItem className='Overview-item-padding'>Ansible Middleware can be used to solve a lot of key challenges...</StackItem>
                   <StackItem>
-                      <Flex justifyContent={{ default: 'justifyContentSpaceBetween' }}>
+                      <Flex Flex direction={{ default: 'row' }} justifyContent={{ default: 'justifyContentSpaceBetween' }}>
                       <FlexItem>
                           <Stack>
-                          <StackItem><AnisbleIcon size="lg" /></StackItem>
-                          <StackItem>Example</StackItem>
+                            <StackItem><AnisbleIcon size="lg" /></StackItem>
+                            <StackItem><b>Example</b></StackItem>
+                            <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>  
                           </Stack>
                       </FlexItem>
                       <FlexItem>
                           <Stack>
-                          <StackItem><AnisbleIcon size="lg" /></StackItem>
-                          <StackItem>Example</StackItem>
+                            <StackItem><AnisbleIcon size="lg" /></StackItem>
+                            <StackItem><b>Example</b></StackItem>
+                            <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
                           </Stack>
                       </FlexItem>
                       <FlexItem>
                           <Stack>
-                          <StackItem><AnisbleIcon size="lg" /></StackItem>
-                          <StackItem>Example</StackItem>
+                            <StackItem><AnisbleIcon size="lg" /></StackItem>
+                            <StackItem><b>Example</b></StackItem>
+                            <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
                           </Stack>
                       </FlexItem>
                       </Flex>
@@ -119,22 +127,22 @@ class Overview extends React.Component {
   
         <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']} className='Overview-item-padding'>Technologies</Title>
-          <Flex>
+          <Flex display={{ default: 'inlineFlex' }}>
               <FlexItem>
-              <AnisbleIcon size="xl" />
+                <AnisbleIcon size="xl" />
               </FlexItem>
               <FlexItem className='Overview-item-padding'>
-              <Title headingLevel="h2">Ansible</Title>
-              <p className='Overview-item-padding'>Long form description of Ansible</p>
+                <Title headingLevel="h2">Ansible</Title>
+                <p className='Overview-item-padding'>Insert longform description of Ansible that we can get from the BU/Marketing including key links</p>
               </FlexItem>
           </Flex>
-          <Flex hasGutter>
+          <Flex hasGutter display={{ default: 'inlineFlex' }}>
               <FlexItem>
                   <AnisbleIcon size="xl" />
               </FlexItem>
               <FlexItem>
                   <Title headingLevel='h2'>Red Hat Runtimes</Title>
-                  Long form description of Red Hat Runtimes
+                  Insert longform description of Red Hat Runtimes that we can get from the BU/Marketing including key links
               </FlexItem>
           </Flex>
         </Box>
@@ -144,7 +152,10 @@ class Overview extends React.Component {
           <Stack hasGutter>
               <StackItem className='Overview-item-padding'><Bullseye><AnisbleIcon size="xl"/></Bullseye></StackItem>
               <StackItem className='Overview-item-padding'><center>
-              Insert text saying how easy it is to get started and reference the guides and collections and documentation we have avalable
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </center></StackItem>
               <Bullseye><StackItem className='Overview-item-padding'>
                 <Tabs

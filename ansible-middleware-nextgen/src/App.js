@@ -182,8 +182,7 @@ class SeparateTabs extends React.Component {
                     eventKey={1}
                     title={<Button>Learn more</Button>}
                     tabContentId="refTab2Section"
-                    tabContentRef={this.contentRef2}
-                    
+                    tabContentRef={this.contentRef2}                    
                   />
                 </Tabs>
               </FlexItem>
@@ -234,7 +233,7 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the third separate content tab"
             hidden
           >
-            Tab 5 section
+            <Bullseye>Documentation</Bullseye>
           </TabContent>
         </div>
       </React.Fragment>
