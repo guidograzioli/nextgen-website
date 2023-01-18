@@ -95,22 +95,22 @@ class Overview extends React.Component {
                   <Stack hasGutter>
                   <StackItem className='Overview-item-padding'>Ansible Middleware can be used to solve a lot of key challenges...</StackItem>
                   <StackItem>
-                      <Flex Flex direction={{ default: 'row' }} justifyContent={{ default: 'justifyContentSpaceBetween' }}>
-                      <FlexItem>
-                          <Stack>
-                            <StackItem><AnisbleIcon size="lg" /></StackItem>
-                            <StackItem><b>Example</b></StackItem>
-                            <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>  
-                          </Stack>
-                      </FlexItem>
-                      <FlexItem>
+                      <Flex direction={{ default: 'row' }} justifyContent={{ default: 'justifyContentSpaceBetween' }}>
+                        <FlexItem className='use_cases'>
                           <Stack>
                             <StackItem><AnisbleIcon size="lg" /></StackItem>
                             <StackItem><b>Example</b></StackItem>
                             <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
                           </Stack>
+                        </FlexItem>
+                      <FlexItem className='use_cases'>
+                          <Stack >
+                            <StackItem><AnisbleIcon size="lg" /></StackItem>
+                            <StackItem><b>Example</b></StackItem>
+                            <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
+                          </Stack>
                       </FlexItem>
-                      <FlexItem>
+                      <FlexItem className='use_cases'>
                           <Stack>
                             <StackItem><AnisbleIcon size="lg" /></StackItem>
                             <StackItem><b>Example</b></StackItem>

@@ -115,3 +115,7 @@
 .learn-more-tab {
   visibility: hidden;
 }
+
+.use_cases {
+  max-width: 30%;
+}
