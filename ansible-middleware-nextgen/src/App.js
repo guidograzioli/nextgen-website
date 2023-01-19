@@ -44,6 +44,7 @@ import {
   EmptyStatePrimary,
   Level,
   LevelItem,
+  BackgroundImage,
 } from '@patternfly/react-core'
 
 import Overview from './Overview';
@@ -58,6 +59,7 @@ import GithubIcon from '@patternfly/react-icons/dist/esm/icons/github-icon';
 import AnisbleIcon from '@patternfly/react-icons/dist/esm/icons/ansible-tower-icon'; 
 import logo from './logo.svg';
 //import redHatRuntimeLogo from './images/red-hat-runtime-logo.svg';
+import Background from './images/pfbg_1200.jpg';
 import './App.css';
 
 class SeparateTabs extends React.Component {
@@ -102,9 +104,12 @@ class SeparateTabs extends React.Component {
 
   }
 
+  
+
   render() {
     return ( 
       <React.Fragment>
+        <BackgroundImage src={Background}/> 
         <Split hasGutter className="navbar">       
           <SplitItem isFilled hasGutter> 
             <Tabs
