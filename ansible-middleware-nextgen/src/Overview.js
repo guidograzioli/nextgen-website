@@ -86,6 +86,7 @@ class Overview extends React.Component {
               </CardBody>
               </center>
           </Card>
+          <div class="arrow bounce"><a class="fa fa-arrow-down fa-2x" href="#"></a></div>
         </Box>
         <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']}>Use Cases</Title>

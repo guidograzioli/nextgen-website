@@ -1,3 +1,6 @@
+/*@import "compass/css3";*/
+
+
 .App {
   text-align: center;
 }
@@ -120,6 +123,7 @@
   max-width: 30%;
 }
 
+/* keep the navbar at the top of the page when scrolling */
 .navbar {
   position: fixed;
   background: #000000; 
@@ -130,4 +134,27 @@
 /* so top content isn't stuck under the navbar */
 .page-padding {
   padding-top: 50px;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
