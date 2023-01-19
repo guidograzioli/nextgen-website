@@ -126,3 +126,8 @@
   width: 100%;
   z-index: 1;
 }
+
+/* so top content isn't stuck under the navbar */
+.page-padding {
+  padding-top: 50px;
+}
