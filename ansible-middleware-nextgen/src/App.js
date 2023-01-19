@@ -105,7 +105,7 @@ class SeparateTabs extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Split hasGutter className="Split">       
+        <Split hasGutter className="navbar">       
           <SplitItem isFilled hasGutter> 
             <Tabs
               activeKey={this.state.activeTabKey} 

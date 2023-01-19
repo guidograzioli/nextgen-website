@@ -119,3 +119,10 @@
 .use-cases {
   max-width: 30%;
 }
+
+.navbar {
+  position: fixed;
+  background: #000000; 
+  width: 100%;
+  z-index: 1;
+}
