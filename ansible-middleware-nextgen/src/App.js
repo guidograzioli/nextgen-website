@@ -103,7 +103,7 @@ class SeparateTabs extends React.Component {
   }
 
   render() {
-    return (
+    return ( 
       <React.Fragment>
         <Split hasGutter className="navbar">       
           <SplitItem isFilled hasGutter> 
