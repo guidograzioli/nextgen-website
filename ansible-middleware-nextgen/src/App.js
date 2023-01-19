@@ -151,7 +151,7 @@ class SeparateTabs extends React.Component {
             <Button className="Button-color" variant="link" icon={<GithubIcon size="lg" className="Icon-color"/>} component="a" href="https://github.com/ansible-middleware/" target="_blank" hasGutter></Button>
             &nbsp;
             &nbsp;
-            <Button className="Button-color" variant="link" icon={<AnisbleIcon size="lg" className="Icon-color"/>} component="a" href="https://galaxy.ansible.com/" target="_blank"hasGutter></Button>
+            <Button className="Button-color" variant="link" icon={<AnisbleIcon size="lg" className="Icon-color"/>} component="a" href="https://galaxy.ansible.com/middleware_automation" target="_blank"hasGutter></Button>
           </SplitItem>
         </Split>
         <div>
