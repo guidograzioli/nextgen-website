@@ -78,7 +78,7 @@ class Overview extends React.Component {
           <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
           <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
             <center>
-              <CardBody className='Overview-card-body'>
+              <CardBody>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
