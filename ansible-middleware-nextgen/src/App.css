@@ -97,6 +97,30 @@
   align-items: center;
 }
 
+.Gallery-options{
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  
+}
+
+.Gallery-options-two{
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.Card-Spacing{
+  padding-left: 5%;
+  padding-right: 5%; 
+}
+
+.Card-Size{
+  width: 10vh;
+  height: 10vh; 
+}
+
 .Overview-top-spacing {
   width: 100%;
   height: 20vh;

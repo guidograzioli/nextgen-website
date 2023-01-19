@@ -103,8 +103,9 @@ class SeparateTabs extends React.Component {
   }
 
   render() {
-    return (
+    return ( 
       <React.Fragment>
+        
         <Split hasGutter className="Split">       
           <SplitItem isFilled hasGutter> 
             <Tabs
@@ -154,6 +155,7 @@ class SeparateTabs extends React.Component {
             <Button className="Button-color" variant="link" icon={<AnisbleIcon size="lg" className="Icon-color"/>} component="a" href="https://galaxy.ansible.com/middleware_automation" target="_blank"hasGutter></Button>
           </SplitItem>
         </Split>
+        
         <div>
           <TabContent
             /* Home */
