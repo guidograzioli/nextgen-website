@@ -252,7 +252,7 @@ function App() {
   return (
     <span>
       <SeparateTabs />
-      <footer className="footer">&#169; {getCurrYear()} - Ansible for Middleware</footer>
+      <footer className="footer">&#169; {getCurrYear()} - Red Hat</footer>
     </span>
   );
 }
