@@ -101,6 +101,7 @@
 }
 
 .Collections-card {
+  width: 25%;
   background:rgba(196, 196, 196, .4);
   color: white;
 }
@@ -115,8 +116,6 @@
 .Gallery-options-two{
   justify-content: center;
   align-items: center;
-  
-  
 }
 
 .Card-Spacing{
