@@ -44,7 +44,8 @@
   height:30px;
   text-align: center;
   min-width: 100%;
-  background: rgb(196, 196, 196);
+  background: rgb(196, 196, 196, .2);
+  color: white;
 }
 
 .topbar{
