@@ -89,7 +89,10 @@
   max-width: 100em;
   margin: auto;
   color: white;
+}
 
+.Overview-card a {
+  color: rgb(30, 0, 202);
 }
 
 .Overview-card {

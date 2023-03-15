@@ -79,10 +79,13 @@ class Overview extends React.Component {
           <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
             <center>
               <CardBody>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p>Ansible for Red Hat Application Services brings the benefits of Ansible automation to Red Hat Runtimes. You can utilize the power of Ansible 
+              automation to orchestrate installation, configuration, and management of Application Services products. <a 
+                href="https://www.redhat.com/en/resources/application-services-modern-cloud-datasheet#:~:text=Red%20Hat%20Application%20Services%20includes,to%20focus%20on%20core%20competencies.&text=managed%20service%20of%20enterprise%20Kubernetes%20platform%20Red%20Hat%20OpenShift.">
+                Learn more about Red Hat Application Services</a></p>
+              <br />
+              <p>Ansible for Red Hat Application Services includes a suite of utilities across the Red Hat Runtimes portfolio that help in managing the full 
+              lifecycle of the application server, their deployables, and the underlying operating system.</p>
               </CardBody>
             </center>
           </Card>
@@ -136,9 +139,8 @@ class Overview extends React.Component {
               <FlexItem className='Overview-item-padding'>
                 <Title headingLevel="h2">Ansible</Title>
                 <p className='Overview-item-padding'>
-                  Insert long form description of Ansible that we can get from the BU/Marketing including key links.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Ansible helps in building and operating automation across your organization. Faster deployments with fewer to no manual releases ensure 
+                  minimal downtime! Let us automate! <a href="https://www.redhat.com/en/technologies/management/ansible">Learn more about Ansible.</a>
                 </p>
               </FlexItem>
             </Flex>
@@ -151,9 +153,10 @@ class Overview extends React.Component {
               <FlexItem className='Overview-item-padding'>
                 <Title headingLevel="h2">Red Hat Runtimes</Title>
                 <p className='Overview-item-padding'>
-                  Insert long form description of Red Hat Runtimes that we can get from the BU/Marketing including key links.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Red Hat Runtimes is a set of products, tools, and components to develop and maintain cloud-native applications. It offers lightweight runtimes
+                  and frameworks for highly distributed cloud architectures, such as microservices, with distributed, in-memory caching for fast data access, 
+                  single sign-on for authentication and authorization, and messaging for reliable data transfer between existing and new applications. <a
+                  href="https://www.redhat.com/en/products/runtimes">Learn More about Red Hat Runtimes</a>
                 </p>
               </FlexItem>
             </Flex>

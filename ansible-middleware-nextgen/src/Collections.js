@@ -23,7 +23,8 @@ export default function Collections() {
             <Flex className="Gallery-options-two" spaceItems={{default: "spaceItems2xl"}}>
             <Card isRounded isLarge className="Collections-card"> 
                 <CardTitle> Infinispan / Red Hat Data Grid </CardTitle>
-                <CardBody> Tab 1 Card Body</CardBody>
+                <CardBody> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam.</CardBody>
                 <CardFooter><Button className="Button-color" variant="link" icon={<GithubIcon size="lg" className="Icon-color"/>} component="a" href="https://github.com/ansible-middleware/infinispan" target="_blank" hasGutter></Button></CardFooter>
             </Card>
             
