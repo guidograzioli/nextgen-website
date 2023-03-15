@@ -108,6 +108,10 @@
   padding-top: 14%;
 }
 
+#available-integrations {
+  padding-top: 5%;
+}
+
 .Collections-card {
   width: 25%;
   background:rgba(196, 196, 196, .4);

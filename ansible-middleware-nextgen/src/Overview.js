@@ -206,7 +206,30 @@ class Overview extends React.Component {
             </Flex>
           </Flex>
         </Box>
-  
+        <Box>
+          <Title headingLevel="h1" size={TitleSizes['4xl']}>What Ansible integrations are available for Red Hat?</Title>
+          <Card className='Overview-card' id='available-integrations' alignSelf={{ default: 'alignSelfCenter' }}>
+            <CardBody>
+              <p>
+                Integrations with Red Hat Application Services are available through a set of Ansible® Content Collections which can be included within new and 
+                existing automation workflows. The Content Collections are a distribution format for Red Hat® Ansible® Automation Platform content that can include 
+                playbooks, roles, modules, and plug-ins around specific topics. Learn more about <a href="https://www.ansible.com/products/content-collections">
+                Ansible Content Collections</a>
+              </p>
+              <br />
+              <p>These collections are available for Red Hat Runtimes products on:</p>
+              <li><a href="https://galaxy.ansible.com/">Upstream Ansible Galaxy</a></li>
+              <li><a href="https://console.redhat.com/ansible/automation-hub">Red Hat Automation Hub for Red Hat customers</a></li>
+              <br />
+              <p>The following collections are available for Red Hat Application Services and more to come!</p>
+              <li>Red Hat JBoss Web Server (Tomcat)</li>
+              <li>Red Hat JBoss Enterprise Application Platform (WildFly)</li>
+              <li>Red Hat Single Sign-On (Keycloak)</li>
+              <br />
+              <p>Find out which Collections are available by browsing the set of available Collections.</p>
+            </CardBody>
+          </Card>
+        </Box>
         <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']} className='Overview-item-padding'>Getting Started</Title>
           <Stack hasGutter>
