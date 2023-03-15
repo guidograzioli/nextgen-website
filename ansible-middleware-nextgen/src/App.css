@@ -154,6 +154,7 @@
 
 .use-cases {
   max-width: 30%;
+  padding-bottom: 30px;
 }
 
 /* keep the navbar at the top of the page when scrolling */

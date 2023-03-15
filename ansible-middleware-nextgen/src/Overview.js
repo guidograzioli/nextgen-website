@@ -103,22 +103,29 @@ class Overview extends React.Component {
                       <FlexItem className='use-cases'>
                         <Stack>
                           <StackItem><AnisbleIcon size="lg" /></StackItem>
-                          <StackItem><b>Example</b></StackItem>
-                          <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
+                          <StackItem><b>Server Installation and configuration</b></StackItem>
+                          <StackItem>Provision and configure the Application Server and its underlying Operating System</StackItem>
                         </Stack>
                       </FlexItem>
                       <FlexItem className='use-cases'>
                           <Stack >
                             <StackItem><AnisbleIcon size="lg" /></StackItem>
-                            <StackItem><b>Example</b></StackItem>
-                            <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
+                            <StackItem><b>Application Lifecycle</b></StackItem>
+                            <StackItem>Manage the full lifecycle of applications and their dependencies</StackItem>
                           </Stack>
                       </FlexItem>
                       <FlexItem className='use-cases'>
                           <Stack>
                             <StackItem><AnisbleIcon size="lg" /></StackItem>
-                            <StackItem><b>Example</b></StackItem>
-                            <StackItem>Lorem ipsum dolor sit amet, aaaaaaaaaaaa</StackItem>
+                            <StackItem><b>Drift Management</b></StackItem>
+                            <StackItem>Enforce the desired state of the Application Server to prevent drift</StackItem>
+                          </Stack>
+                      </FlexItem>
+                      <FlexItem className='use-cases'>
+                          <Stack>
+                            <StackItem><AnisbleIcon size="lg" /></StackItem>
+                            <StackItem><b>Security and Compliance</b></StackItem>
+                            <StackItem>Harden the security posture and assist with satisfying regulatory requirements</StackItem>
                           </Stack>
                       </FlexItem>
                     </Flex>
