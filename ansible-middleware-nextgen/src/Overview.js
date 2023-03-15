@@ -94,7 +94,7 @@ class Overview extends React.Component {
         <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']}>What's Included?</Title>
           <Card className='Overview-card' id='included' alignSelf={{ default: 'alignSelfCenter' }}>
-            <CardBody className='Overview-included-card-body'>
+            <CardBody>
               <p>
                 Integrations with Red Hat Runtimes products are available through a set of Ansible Content Collections which can be included within new 
                 and existing automation workflows.  These collections are available within the upstream Ansible Galaxy and in Red Hat Automation Hub for Red 
@@ -108,6 +108,22 @@ class Overview extends React.Component {
               <p>
                 Collections are available for popular Red Hat Runtimes including Red Hat JBoss Web Server (Tomcat), Red Hat JBoss Enterprise Application 
                 Platform (WildFly), Red Hat Single Sign-On (Keycloak) and more!
+              </p>
+            </CardBody>
+          </Card>
+        </Box>
+        <Box>
+          <Title headingLevel="h1" size={TitleSizes['4xl']}>Developing</Title>
+          <Card className='Overview-card' id='included' alignSelf={{ default: 'alignSelfCenter' }}>
+            <CardBody>
+              <p>
+                The capabilities provided by Ansible Middleware, much like the rest of Ansible’s featureset, are just the foundation for the possibilities 
+                that can be realized. Including the collections within your automation activities is easy and enables you to supercharge managing Red Hat 
+                Runtimes anywhere -- from the datacenter, to the edge, to the public cloud.
+              </p>
+              <br />
+              <p>
+                Interested in contributing to the Ansible Middleware project? Navigate to the ansible-middleware GitHub organization and join the community!
               </p>
             </CardBody>
           </Card>
