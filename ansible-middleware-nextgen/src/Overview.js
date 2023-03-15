@@ -92,6 +92,27 @@ class Overview extends React.Component {
           <div class="arrow bounce"><a class="fa fa-arrow-down fa-2x" href="#"></a></div>
         </Box>
         <Box>
+          <Title headingLevel="h1" size={TitleSizes['4xl']}>What's Included?</Title>
+          <Card className='Overview-card' id='included' alignSelf={{ default: 'alignSelfCenter' }}>
+            <CardBody className='Overview-included-card-body'>
+              <p>
+                Integrations with Red Hat Runtimes products are available through a set of Ansible Content Collections which can be included within new 
+                and existing automation workflows.  These collections are available within the upstream Ansible Galaxy and in Red Hat Automation Hub for Red 
+                Hat Customers.</p>
+              <br />
+              <ul>
+                <li>- Access the Ansible Middleware collections on Ansible Galaxy</li>
+                <li>- Access the Ansible Middleware collections on Red Hat Automation Hub</li>
+              </ul>
+              <br />
+              <p>
+                Collections are available for popular Red Hat Runtimes including Red Hat JBoss Web Server (Tomcat), Red Hat JBoss Enterprise Application 
+                Platform (WildFly), Red Hat Single Sign-On (Keycloak) and more!
+              </p>
+            </CardBody>
+          </Card>
+        </Box>
+        <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']}>Use Cases</Title>
           <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
               <center>

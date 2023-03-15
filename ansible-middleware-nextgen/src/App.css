@@ -104,6 +104,10 @@
   background:rgba(196, 196, 196, .4);
 }
 
+#included {
+  padding-top: 12%;
+}
+
 .Collections-card {
   width: 25%;
   background:rgba(196, 196, 196, .4);
