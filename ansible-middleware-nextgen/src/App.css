@@ -106,10 +106,12 @@
 
 #included {
   padding-top: 14%;
+  padding-bottom: 14%;
 }
 
 #available-integrations {
-  padding-top: 5%;
+  padding-top: 7%;
+  padding-bottom: 7%
 }
 
 .Collections-card {
