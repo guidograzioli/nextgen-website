@@ -99,7 +99,9 @@ class SeparateTabs extends React.Component {
           overviewHidden: true
         });
       }
-      console.log(this.overviewHidden)
+      // set scroll back to the top
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     };
 
   }
