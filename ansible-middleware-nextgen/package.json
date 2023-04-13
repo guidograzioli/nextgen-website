@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@paciolan/remote-component": "^2.13.0",
     "@patternfly/patternfly": "^4.221.2",
     "@patternfly/react-core": "^4.264.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -13,6 +14,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.1",
+    "react-markdown": "^8.0.6",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
