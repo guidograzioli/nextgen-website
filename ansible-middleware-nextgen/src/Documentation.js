@@ -1,16 +1,27 @@
 import React from 'react';
 import './App.css';
-import ReactMarkdown from 'react-markdown';
-import gfm from 'remark-gfm'
-import keycloak from './documentationFiles/keycloak.md';
+//import keycloak from './documentationFiles/keycloak.md';
 
 // markdown-it is the module that turns md files to html
 const md = require('markdown-it')({
     breaks: true // add <br> tags between elements
 });
 
-// Sanitize markdown html and turn it into JSX
-function convertMarkdownToJSX(data) {
+// github links
+const readmeLinks = [
+    'https://raw.githubusercontent.com/ansible-middleware/infinispan/main/README.md',
+    'https://raw.githubusercontent.com/ansible-middleware/keycloak/main/README.md',
+    'https://raw.githubusercontent.com/ansible-middleware/wildfly/main/README.md',
+    'https://raw.githubusercontent.com/ansible-middleware/jws/main/README.md',
+    'https://raw.githubusercontent.com/ansible-middleware/amq/main/README.md',
+    'https://raw.githubusercontent.com/ansible-middleware/amq_streams/main/README.md',
+    'https://raw.githubusercontent.com/ansible-middleware/redhat-csp-download/main/README.md',
+    'https://raw.githubusercontent.com/ansible-middleware/ansible_collections_jcliff/main/README.md'
+
+]
+
+// convert markdown into HTML then sanitize the output to work with patternfly
+function convertMarkdownToHTML(data) {
     // have to remove comments before md converts it
     let commentPattern = new RegExp(/<!--[\s\S]*?-->/g);
     let result = data.replace(commentPattern, "");
@@ -31,30 +42,26 @@ function convertMarkdownToJSX(data) {
         result = result.replace(new RegExp(`</h${i}>`, "g"), `</strong></h${i}><br/>`);
     }
       
-    console.log(result);
     return result;
 }
 
 class Documentation extends React.Component {
     state = { loading: true,
-        docText: null,
-  };
+        docText: "",
+    };
 
-componentDidMount() {
 
-    fetch( keycloak, { mode: "no-cors" }
-        // { 
-        //   method: "GET",
-        //   headers: {
-        //     "Content-Type": "application/text",
-        //   },
-        // }
-        ).then((response) => { return response.text();})
-        .then((data) => {
-        this.setState({ docText: data, loading: false });
-        //console.log({ docText: data });
-            })
-        .catch((error) => { console.log(error);
+    componentDidMount() {
+        // generate html for each readme
+        readmeLinks.forEach(readme => {
+            fetch(readme)
+                .then((response) => { return response.text();})
+                .then((data) => {
+                this.setState({ docText: this.state.docText + convertMarkdownToHTML(data), loading: false });
+                //console.log({ docText: data });
+                    })
+                .catch((error) => { console.log(error);
+            });
         });
     }
 
@@ -66,7 +73,7 @@ render() {
            <div>Loading...</div>
                 ) : ( 
             
-            <div dangerouslySetInnerHTML={{ __html: convertMarkdownToJSX(this.state.docText) }} />
+            <div dangerouslySetInnerHTML={{ __html: this.state.docText }} />
           )}
           </div>
           </div>
