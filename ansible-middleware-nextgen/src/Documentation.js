@@ -8,17 +8,16 @@ const md = require('markdown-it')({
 });
 
 // github links
-const readmeLinks = [
-    'https://raw.githubusercontent.com/ansible-middleware/infinispan/main/README.md',
-    'https://raw.githubusercontent.com/ansible-middleware/keycloak/main/README.md',
-    'https://raw.githubusercontent.com/ansible-middleware/wildfly/main/README.md',
-    'https://raw.githubusercontent.com/ansible-middleware/jws/main/README.md',
-    'https://raw.githubusercontent.com/ansible-middleware/amq/main/README.md',
-    'https://raw.githubusercontent.com/ansible-middleware/amq_streams/main/README.md',
-    'https://raw.githubusercontent.com/ansible-middleware/redhat-csp-download/main/README.md',
-    'https://raw.githubusercontent.com/ansible-middleware/ansible_collections_jcliff/main/README.md'
-
-]
+const readmeLinks = {
+    'infinispan'                  :                 'https://raw.githubusercontent.com/ansible-middleware/infinispan/main/README.md',
+    'keycloak'                    :                   'https://raw.githubusercontent.com/ansible-middleware/keycloak/main/README.md',
+    'wildfly'                     :                    'https://raw.githubusercontent.com/ansible-middleware/wildfly/main/README.md',
+    'jws'                         :                        'https://raw.githubusercontent.com/ansible-middleware/jws/main/README.md',
+    'amq'                         :                        'https://raw.githubusercontent.com/ansible-middleware/amq/main/README.md',
+    'amqStreams'                  :                 'https://raw.githubusercontent.com/ansible-middleware/amq_streams/main/README.md',
+    'redhatCSPDownload'           :          'https://raw.githubusercontent.com/ansible-middleware/redhat-csp-download/main/README.md',
+    'ansibleCollectionsJcliff'    :   'https://raw.githubusercontent.com/ansible-middleware/ansible_collections_jcliff/main/README.md'
+}
 
 // convert markdown into HTML then sanitize the output to work with patternfly
 function convertMarkdownToHTML(data) {
@@ -46,22 +45,25 @@ function convertMarkdownToHTML(data) {
 }
 
 class Documentation extends React.Component {
-    state = { loading: true,
-        docText: "",
-    };
+    constructor(props) {
+        super(props);
+        this.state = { 
+            loading: true,
+            docText: "",
+            readme: 'infinispan'
+        };
+    }
 
 
     componentDidMount() {
         // generate html for each readme
-        readmeLinks.forEach(readme => {
-            fetch(readme)
-                .then((response) => { return response.text();})
-                .then((data) => {
-                this.setState({ docText: this.state.docText + convertMarkdownToHTML(data), loading: false });
-                //console.log({ docText: data });
-                    })
-                .catch((error) => { console.log(error);
-            });
+        fetch(readmeLinks[this.state.readme])
+            .then((response) => { return response.text();})
+            .then((data) => {
+            this.setState({ docText: convertMarkdownToHTML(data), loading: false });
+            //console.log({ docText: data });
+                })
+            .catch((error) => { console.log(error);
         });
     }
 
