@@ -79,17 +79,67 @@ class Overview extends React.Component {
           <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
             <center>
               <CardBody>
-              <p>Ansible for Red Hat Application Services brings the benefits of Ansible automation to Red Hat Runtimes. You can utilize the power of Ansible 
-              automation to orchestrate installation, configuration, and management of Application Services products. <a 
-                href="https://www.redhat.com/en/resources/application-services-modern-cloud-datasheet#:~:text=Red%20Hat%20Application%20Services%20includes,to%20focus%20on%20core%20competencies.&text=managed%20service%20of%20enterprise%20Kubernetes%20platform%20Red%20Hat%20OpenShift.">
-                Learn more about Red Hat Application Services</a></p>
+              <p>Ansible for middleware brings the benefits of Ansible automation to upstream middleware (Runtimes) projects and Red Hat Application Services (Red Hat Runtimes). 
+                You can utilize the power of Ansible automation to orchestrate installation, configuration, and management of middleware products. 
+              </p>
               <br />
-              <p>Ansible for Red Hat Application Services includes a suite of utilities across the Red Hat Runtimes portfolio that help in managing the full 
+              <p>Ansible for middleware includes a suite of utilities across the upstream middleware and Red Hat Runtimes portfolio that help in managing the full 
               lifecycle of the application server, their deployables, and the underlying operating system.</p>
+              <p><a href="https://www.redhat.com/en/resources/application-services-modern-cloud-datasheet#:~:text=Red%20Hat%20Application%20Services%20includes,to%20focus%20on%20core%20competencies.&text=managed%20service%20of%20enterprise%20Kubernetes%20platform%20Red%20Hat%20OpenShift.">
+                Learn more about Red Hat Application Services</a></p>
               </CardBody>
             </center>
           </Card>
           <div class="arrow bounce"><a class="fa fa-arrow-down fa-2x" href="#"></a></div>
+        </Box>
+        <Box>
+          <Title headingLevel="h1" size={TitleSizes['4xl']}>What is Ansible?</Title>
+          <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
+            <center>
+              <CardBody>
+              <p>Ansible helps in building and operating automation across your organization. Faster deployments with fewer to no manual releases ensure minimal downtime! Let us automate!</p>
+              <p><a href="https://www.redhat.com/en/technologies/management/ansible">
+                Learn more about Ansible.</a></p>
+              </CardBody>
+            </center>
+          </Card>
+        </Box>
+        <Box>
+          <Title headingLevel="h1" size={TitleSizes['4xl']}>What is Red Hat Runtimes?</Title>
+          <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
+            <center>
+              <CardBody>
+              <p>Red Hat Runtimes is a set of products, tools, and components that are used to develop and maintain cloud-native applications. It offers lightweight runtimes and frameworks 
+                for highly distributed cloud architectures, such as microservices. It also includes a distributed, in-memory caching for fast data access, single sign-on for authentication and 
+                authorization, and messaging for reliable data transfer between existing and new applications.</p>
+              <br />
+              <p><a href="https://www.redhat.com/en/products/runtimes">
+                Learn more about Red Hat Runtimes.</a></p>
+              </CardBody>
+            </center>
+          </Card>
+        </Box>
+        <Box>
+          <Title headingLevel="h1" size={TitleSizes['4xl']}>What Ansible integrations are available for Red Hat?</Title>
+          <Card className='Overview-card' id='available-integrations' alignSelf={{ default: 'alignSelfCenter' }}>
+            <CardBody>
+              <p>
+                Integrations with middleware products are available through a set of Ansible® Content Collections which can be included within new and 
+                existing automation workflows. The Content Collections are a distribution format for Ansible content that can include 
+                playbooks, roles, modules, and plug-ins around specific topics. Learn more about <a href="https://www.ansible.com/products/content-collections">
+                Ansible Content Collections</a>
+              </p>
+              <br />
+              <p>These collections are available for Red Hat Runtimes products on:</p>
+              <li><a href="https://galaxy.ansible.com/">Upstream Ansible Galaxy</a></li>
+              <li><a href="https://console.redhat.com/ansible/automation-hub">Red Hat Automation Hub for Red Hat customers</a></li>
+              <br />
+              <p>Check out which Ansible collections are available. Some examples of Ansible collections available for upstream middleware products and Red Hat Runtimes:</p>
+              <li>Red Hat JBoss Web Server (Tomcat)</li>
+              <li>Red Hat JBoss Enterprise Application Platform (WildFly)</li>
+              <li>Red Hat Single Sign-On (Keycloak)</li>
+            </CardBody>
+          </Card>
         </Box>
         <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']}>What's Included?</Title>
@@ -207,39 +257,19 @@ class Overview extends React.Component {
           </Flex>
         </Box>
         <Box>
-          <Title headingLevel="h1" size={TitleSizes['4xl']}>What Ansible integrations are available for Red Hat?</Title>
-          <Card className='Overview-card' id='available-integrations' alignSelf={{ default: 'alignSelfCenter' }}>
-            <CardBody>
-              <p>
-                Integrations with Red Hat Application Services are available through a set of Ansible® Content Collections which can be included within new and 
-                existing automation workflows. The Content Collections are a distribution format for Red Hat® Ansible® Automation Platform content that can include 
-                playbooks, roles, modules, and plug-ins around specific topics. Learn more about <a href="https://www.ansible.com/products/content-collections">
-                Ansible Content Collections</a>
-              </p>
-              <br />
-              <p>These collections are available for Red Hat Runtimes products on:</p>
-              <li><a href="https://galaxy.ansible.com/">Upstream Ansible Galaxy</a></li>
-              <li><a href="https://console.redhat.com/ansible/automation-hub">Red Hat Automation Hub for Red Hat customers</a></li>
-              <br />
-              <p>The following collections are available for Red Hat Application Services and more to come!</p>
-              <li>Red Hat JBoss Web Server (Tomcat)</li>
-              <li>Red Hat JBoss Enterprise Application Platform (WildFly)</li>
-              <li>Red Hat Single Sign-On (Keycloak)</li>
-              <br />
-              <p>Find out which Collections are available by browsing the set of available Collections.</p>
-            </CardBody>
-          </Card>
-        </Box>
-        <Box>
           <Title headingLevel="h1" size={TitleSizes['4xl']} className='Overview-item-padding'>Getting Started</Title>
           <Stack hasGutter>
               <StackItem className='Overview-item-padding'><Bullseye><AnisbleIcon size="xl"/></Bullseye></StackItem>
-              <StackItem className='Overview-item-padding'><center>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </center></StackItem>
+              <StackItem className='Overview-item-padding'>
+                <p>You can use the Ansible collections to automate the installation and configuration of upstream middleware (Runtimes) and Red Hat Application Services 
+                (Red Hat Runtimes) products. Here is what you need to do to get started:</p>
+                <br />
+                <li>Install Ansible</li>
+                <li>Install Ansible navigator</li>
+                <li>Define an inventory</li>
+                <li>Create an Ansible playbook for any of the listed middleware products</li>
+                <li>Run the Ansible playbook</li>
+              </StackItem>
               <Bullseye><StackItem className='Overview-item-padding'>
                 <Tabs
                     /* Switch to the overview tab when we click the 'Learn More' button */
@@ -252,7 +282,7 @@ class Overview extends React.Component {
                   >
                   <Flex justifyContent={{ default: 'justifyContentSpaceBetween' }}>
                       <FlexItem>
-                          <Button>Getting Started Guide</Button>
+                          <Button component="a" href="https://developers.redhat.com/articles/2023/03/14/tutorial-middleware-automation-collections#" target="_blank">Getting Started Guide</Button>
                       </FlexItem>
                       <FlexItem>
                         <Tab
