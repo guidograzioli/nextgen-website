@@ -50,6 +50,7 @@ import {
 import Overview from './Overview';
 import Homepage from './Homepage';
 import Collections from './Collections';
+import Documentation from './Documentation';
 
 import {
   TimesIcon
@@ -240,7 +241,7 @@ class SeparateTabs extends React.Component {
             aria-label="This is content for the third separate content tab"
             hidden
           >
-            <Bullseye>Documentation</Bullseye>
+            <Documentation />
           </TabContent>
         </div>
       </React.Fragment>
