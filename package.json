@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
-=======
   "name": "docsy-example-site",
   "version": "0.7.1",
   "description": "Example site that uses Docsy theme for technical documentation.",
@@ -38,6 +34,5 @@
     "autoprefixer": "^10.4.14",
     "hugo-extended": "0.113.0",
     "postcss-cli": "^10.1.0"
->>>>>>> hugo
   }
 }
