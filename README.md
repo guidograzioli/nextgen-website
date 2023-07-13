@@ -1,11 +1,12 @@
 # nextgen-website
 Future website for the Ansible Middleware Project
 
-To run locally:
+Pre-reqs
+- hugo v0.115.2+extended
+- go version go1.20.5
 
-Have the latest version of node and npm installed https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+To run locally:
 ```
 cd ansible-middleware-nextgen
-npm install
-npm start
+hugo serve
 ```
