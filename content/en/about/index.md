@@ -1,35 +1,35 @@
 ---
-title: About Goldydocs
+title: About Ansible Middleware
 linkTitle: About
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="About Goldydocs" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Ansible Middleware" image_anchor="bottom" height="auto" %}}
 
-A sample site using the Docsy Hugo theme.
+What is Ansible Middleware?
 {.mt-5}
 
 {{% /blocks/cover %}}
 
 {{% blocks/lead %}}
 
-Goldydocs is a sample site using the [Docsy](https://github.com/google/docsy)
-Hugo theme that shows what it can do and provides you with a template site
-structure. It’s designed for you to clone and edit as much as you like. See the
-different sections of the documentation and site for more ideas.
+Ansible Middleware brings the power of Ansible automation to Red Hat Runtimes. Included are a suite of utilities across the Red Hat Runtimes portfolio to aid in managing the full lifecycle of the application server, their deployables, and the underlying Operating System.
 
 {{% /blocks/lead %}}
 
 {{% blocks/section %}}
 
-# This is another section
+What's included?
 {.text-center}
+Integrations with Red Hat Runtimes products are available through a set of Ansible Content Collections which can be included within new and existing automation workflows.  These collections are available within the upstream Ansible Galaxy and in Red Hat Automation Hub for Red Hat Customers. 
 
 {{% /blocks/section %}}
 
 {{% blocks/section %}}
 
-# This is another section
-{.text-center}
+Access the Ansible Middleware collections on Ansible Galaxy <br>
+Access the Ansible Middleware collections on Red Hat Automation Hub <br>
+Collections are available for popular Red Hat Runtimes including Red Hat JBoss Web Server (Tomcat), Red Hat JBoss Enterprise Application Platform (WildFly), Red Hat Single Sign-On (Keycloak) and more! <br> 
+Find out which Collections are available by browsing the set of available Collections.
 
 {{% /blocks/section %}}
