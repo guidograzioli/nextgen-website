@@ -1,4 +1,4 @@
 ---
-title: Releases
+title: Kafka
 weight: 20
 ---

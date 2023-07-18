@@ -1,10 +1,10 @@
 ---
-title: Documentation
-linkTitle: Docs
-menu: {main: {weight: 40}}
-weight: 40
----
+title: Examples
+linkTitle: Examples
+menu: {main: {weight: 30}}
+cascade: { "type": "docs"}
 
+---
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}

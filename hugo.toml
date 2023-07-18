@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Ansible Middleware Collections"
+title = "Home"
 
 # Language settings
 contentDir = "content/en"

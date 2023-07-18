@@ -1,10 +1,10 @@
 ---
-title: Documentation
-linkTitle: Docs
-menu: {main: {weight: 40}}
-weight: 40
----
+title: Ansible Middleware Collections
+linkTitle: Collections
+menu: {main: {weight: 20}}
+cascade: { "type": "docs"}
 
+---
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
