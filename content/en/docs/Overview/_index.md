@@ -1,36 +1,25 @@
 ---
 title: Overview
-description: Here's where your user finds out if your project is for them.
+description: Ansible for Middleware box
 weight: 1
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Ansible® for middleware brings the benefits of Ansible automation to upstream middleware ([Runtimes](https://www.redhat.com/en/products/runtimes)) projects and Red Hat Application Services ([Red Hat Runtimes](https://www.redhat.com/en/products/runtimes)). You can utilize the power of Ansible automation to orchestrate installation, configuration, and management of these middleware products. 
 {{% /pageinfo %}}
-
-
-The Overview is where your users find out about your project. Depending on the size of your docset, you can have a separate overview page (like this one) or put your overview contents in the Documentation landing page (like in the Docsy User Guide).
-
-Try answering these questions for your user in this page:
 
 ## What is it?
 
-Introduce your project, including what it does or lets you do, why you would use it, and its primary goal (and how it achieves it). This should be similar to your README description, though you can go into a little more detail here if you want.
+Ansible for middleware includes a suite of utilities across the upstream middleware and Red Hat Runtimes portfolio that help in managing the full lifecycle of the application server, their deployables, and the underlying operating system.
 
-## Why do I want it?
+## What is Red Hat Runtimes?
 
-Help your user know if your project will help them. Useful information can include:
+Red Hat Runtimes is a set of products, tools, and components that are used to develop and maintain cloud-native applications. It offers lightweight runtimes and frameworks for highly distributed cloud architectures, such as microservices. It also includes a distributed, in-memory caching for fast data access, single sign-on for authentication and authorization, and messaging for reliable data transfer between existing and new applications. Learn more about [Red Hat Runtimes](https://www.redhat.com/en/products/runtimes).
 
-* **What is it good for?**: What types of problems does your project solve? What are the benefits of using it?
+## What Ansible integrations are available?
 
-* **What is it not good for?**: For example, point out situations that might intuitively seem suited for your project, but aren't for some reason. Also mention known limitations, scaling issues, or anything else that might let your users know if the project is not for them.
+Integrations with middleware products are available through a set of Ansible® Content Collections which can be included within new and existing automation workflows. The Content Collections are a distribution format for content that can include playbooks, roles, modules, and plug-ins around specific topics. Learn more about [Ansible Content Collections](https://www.ansible.com/products/content-collections).
 
-* **What is it *not yet* good for?**: Highlight any useful features that are coming soon.
-
-## Where should I go next?
-
-Give your users next steps from the Overview. For example:
-
-* [Getting Started](/docs/getting-started/): Get started with $project
-* [Examples](/docs/examples/): Check out some example code!
-
+These collections are available on:
+- [Upstream Ansible Galaxy](https://galaxy.ansible.com/)
+- [Red Hat Automation Hub for Red Hat customers](https://console.redhat.com/ansible/automation-hub)

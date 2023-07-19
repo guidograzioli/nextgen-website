@@ -6,24 +6,16 @@ cascade: { "type": "docs"}
 
 ---
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Middleware Automation Collections documentation
 {{% /pageinfo %}}
 
-This section is where the user documentation for your project lives - all the
-information your users need to understand and successfully use your project.
+## Contributing to Middleware Automation
 
-For large documentation sets we recommend adding content under the headings in
-this section, though if some or all of them don’t apply to your project feel
-free to remove them or add your own. You can see an example of a smaller Docsy
-documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which
-lives in the [Docsy theme
-repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to
-copy its docs section.
+Get involved! One of the ways you can contribute to the Middleware Automation collections is by adding documentation. 
 
-Other content such as marketing material, case studies, and community updates
-should live in the [Overview](/Overview/) and [Community](/community/) pages.
+Here is what you can do:
 
-Find out how to use the Docsy theme in the [Docsy User
-Guide](https://docsy.dev/docs/). You can learn more about how to organize your
-documentation (and how we organized this site) in [Organizing Your
-Content](https://docsy.dev/docs/best-practices/organizing-content/).
+- Look for existing documentation issues for the middleware project you want to contribute to. For example, look for doc issues in the WildFly repo at: https://github.com/ansible-middleware/wildfly/issues.
+- If you know about a doc fix but don't see a corresponding issue, go ahead and create a new issue in the repository. A good place to start is the README.md file for each project. These often need to be expanded or improved.
+- Fork the repository for the middleware project if you already haven't.
+- Apply the changes to your docs and send a pull request to the project.

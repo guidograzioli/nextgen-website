@@ -19,54 +19,21 @@ Ansible Middleware brings the power of Ansible automation to Red Hat Runtimes. I
 {{% /blocks/lead %}}
 
 
-{{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
+{{% blocks/section colour= "dark" type="row" %}}
+{{% blocks/feature icon="fa-lightbulb" title="Ansible Galaxy" %}}
+[middleware-automation](https://galaxy.ansible.com/middleware_automation) on Ansible Galaxy
 
 Please follow this space for updates!
 {{% /blocks/feature %}}
 
 
 {{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/ansible-middleware" %}}
-We do a [Pull Request](https://github.com/ansible-middleware) contributions workflow on **GitHub**. New users are always welcome!
+We do a Pull Request contributions workflow on [GitHub](https://github.com/ansible-middleware). New users are always welcome!
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
+{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/redhat" %}}
 For announcement of latest features etc.
 {{% /blocks/feature %}}
 
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}}
-
-
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/ansible-middleware" %}}
-We do a [Pull Request](https://github.com/ansible-middleware/)
-contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
 {{% /blocks/section %}}
