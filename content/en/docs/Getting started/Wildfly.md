@@ -4,6 +4,11 @@ date: 2023-07-19
 description: >
   Getting started with Ansible Middileware's Wildfly collection.
 ---
+
+<figure class="video_container">
+  <iframe width="600" height="350" src="https://www.youtube.com/embed/3zzkGiVW7p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</figure>
+
 ### Local machine setup:
 
 First, let’s set up the required dependencies on the local machine. Start by installing Ansible on the local machine using your preferred method. See the Installing [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installation-guide) section of the documentation for the available options.

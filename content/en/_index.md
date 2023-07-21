@@ -9,14 +9,22 @@ title: Ansible Middleware
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/ansible-middleware">
   Download <i class="fab fa-github ms-2 "></i>
 </a>
-<p class="lead mt-5">Ansible for Middleware Overview</p>
+<p class="lead mt-5"><b>Ansible + Red Hat Application Services</b></p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
 
-{{% blocks/lead color="primary" %}}
-Ansible Middleware brings the power of Ansible automation to [Red Hat Runtimes](https://www.redhat.com/en/products/runtimes). Included are a suite of utilities across the [Red Hat Runtimes](https://www.redhat.com/en/products/runtimes) portfolio to aid in managing the full lifecycle of the application server, their deployables, and the underlying Operating System.
-{{% /blocks/lead %}}
+{{% blocks/section color="primary" %}}
+Discover the benefits of using [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) and [Red Hat Application Services](https://developers.redhat.com/cheat-sheets/red-hat-openshift-application-services-cheat-sheet) to build, deploy, and manage multi-cloud application infrastructure at scale. Red Hat Application Services includes a number of Red Hat products including Red Hat [JBoss Enterprise Application Platform](https://developers.redhat.com/cheat-sheets/red-hat-openshift-application-services-cheat-sheet) (WildFly), Red Hat Data Grid (Infinispan), [Red Hat’s single-sign on technology](https://access.redhat.com/products/red-hat-single-sign-on/) (Keycloak), [Red Hat AMQ](https://developers.redhat.com/node/214105) (Kafka), and more.
+
+- **Consistent**: Ensure reliability with a consistent development and deployment model to create, modify, deploy, and manage business apps in an automated fashion.
+- **Flexible**: Implement simple, single-site installations on a flexible platform, with the potential to grow across geographies and platforms.
+- **Repeatable**: Write once and quickly install, upgrade, rollback, configure, and scale without manual intervention.
+- **Reliable**: Operate and manage large-scale JBoss infrastructure without the risk of manual errors.
+
+
+
+{{% /blocks/section %}}
 
 
 {{% blocks/section colour= "dark" type="row" %}}
