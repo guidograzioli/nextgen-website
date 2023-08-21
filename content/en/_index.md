@@ -6,16 +6,16 @@ title: Ansible Middleware
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/ansible-middleware">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://developers.redhat.com/topics/ansible-automation-applications-and-services">
   Download <i class="fab fa-github ms-2 "></i>
 </a>
-<p class="lead mt-5"><b>Ansible + Red Hat Application Services</b></p>
+<p class="lead mt-5"><b>Ansible based automation for Red Hat Application Services and upstream middleware projects</b></p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
 
 {{% blocks/section color="primary" %}}
-Discover the benefits of using [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) and [Red Hat Application Services](https://developers.redhat.com/cheat-sheets/red-hat-openshift-application-services-cheat-sheet) to build, deploy, and manage multi-cloud application infrastructure at scale. Red Hat Application Services includes a number of Red Hat products including Red Hat [JBoss Enterprise Application Platform](https://developers.redhat.com/cheat-sheets/red-hat-openshift-application-services-cheat-sheet) (WildFly), Red Hat Data Grid (Infinispan), [Red Hat’s single-sign on technology](https://access.redhat.com/products/red-hat-single-sign-on/) (Keycloak), [Red Hat AMQ](https://developers.redhat.com/node/214105) (Kafka), and more.
+Discover the benefits of using [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) and [Red Hat Application Services](https://developers.redhat.com/cheat-sheets/red-hat-openshift-application-services-cheat-sheet) to build, deploy, and manage multi-cloud application infrastructure at scale. Red Hat Application Services includes a number of Red Hat products including Red Hat [JBoss Enterprise Application Platform](https://developers.redhat.com/cheat-sheets/red-hat-openshift-application-services-cheat-sheet) (WildFly), Red Hat Data Grid (Infinispan), [Red Hat’s single-sign on technology](https://access.redhat.com/products/red-hat-single-sign-on/) (Keycloak), [Red Hat AMQ](https://developers.redhat.com/node/214105) (Kafka and Broker) and more.
 
 - **Consistent**: Ensure reliability with a consistent development and deployment model to create, modify, deploy, and manage business apps in an automated fashion.
 - **Flexible**: Implement simple, single-site installations on a flexible platform, with the potential to grow across geographies and platforms.

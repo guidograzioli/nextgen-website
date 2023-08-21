@@ -4,7 +4,7 @@ weight: 20
 ---
 
 {{% pageinfo %}}
-Learn how to automate the deployment of Red Hat Single Sign-On using Ansible Automation Platform, and the certified collections provided by a4mw (Ansible for Middleware).{{% /pageinfo %}}
+Learn how to automate the deployment of Red Hat Single Sign-On using Ansible Automation Platform, and the certified collections provided by a4mw (Ansible Middleware).{{% /pageinfo %}}
 
 Try it out using the Instruqt platform.
 

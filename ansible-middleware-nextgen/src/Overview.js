@@ -75,15 +75,15 @@ class Overview extends React.Component {
       <Flex className="Overview-container" direction={{ default: "column" }}>
         <div className='Overview-top-spacing'></div>
         <Box>
-          <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible for Middleware</Title>
+          <Title headingLevel="h1" size={TitleSizes['4xl']}>Ansible Middleware</Title>
           <Card className='Overview-card' alignSelf={{ default: 'alignSelfCenter' }}>
             <center>
               <CardBody>
-              <p>Ansible for middleware brings the benefits of Ansible automation to upstream middleware (Runtimes) projects and Red Hat Application Services (Red Hat Runtimes). 
+              <p>Ansible middleware brings the benefits of Ansible automation to upstream middleware (Runtimes) projects and Red Hat Application Services (Red Hat Runtimes). 
                 You can utilize the power of Ansible automation to orchestrate installation, configuration, and management of middleware products. 
               </p>
               <br />
-              <p>Ansible for middleware includes a suite of utilities across the upstream middleware and Red Hat Runtimes portfolio that help in managing the full 
+              <p>Ansible middleware includes a suite of utilities across the upstream middleware and Red Hat Runtimes portfolio that help in managing the full 
               lifecycle of the application server, their deployables, and the underlying operating system.</p>
               <p><a href="https://www.redhat.com/en/resources/application-services-modern-cloud-datasheet#:~:text=Red%20Hat%20Application%20Services%20includes,to%20focus%20on%20core%20competencies.&text=managed%20service%20of%20enterprise%20Kubernetes%20platform%20Red%20Hat%20OpenShift.">
                 Learn more about Red Hat Application Services</a></p>

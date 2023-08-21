@@ -10,7 +10,7 @@ Ansible® for middleware brings the benefits of Ansible automation to upstream m
 
 ## What is it?
 
-Ansible for middleware includes a suite of utilities across the upstream middleware and Red Hat Runtimes portfolio that help in managing the full lifecycle of the application server, their deployables, and the underlying operating system.
+Ansible middleware includes a suite of utilities across the upstream middleware and Red Hat Runtimes portfolio that help in managing the full lifecycle of the application server, their deployables, and the underlying operating system.
 
 ## What is Red Hat Runtimes?
 
