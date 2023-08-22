@@ -1,7 +1,7 @@
 ---
 title: Getting started
 description: Getting started with Ansible Middleware
-weight: 2
+weight: 30
 ---
 {{% pageinfo %}}
 You can use the Ansible collections to automate the installation and configuration of upstream middleware (Runtimes) and Red Hat Application Services ([Red Hat Runtimes](https://www.redhat.com/en/products/runtimes)).

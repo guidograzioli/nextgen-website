@@ -39,7 +39,9 @@ Ansible Middleware brings the power of Ansible automation to [Red Hat Runtimes](
 {{< home/usecases >}}
 {{< home/tech >}}
 
+
 {{% blocks/lead %}}
+
 <h2 align="left">Getting Started</h2>
 
 <img class="o-feature__icon" src="static/img/icons/gettingstarted.png" width="90" height="100">

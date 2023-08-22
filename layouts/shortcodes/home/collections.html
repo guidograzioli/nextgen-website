@@ -1,0 +1,36 @@
+{{ $collections := $.Page.Params.collections -}}
+<div class="body-container collections">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-12 mt-5 mb-5">
+        </div>
+        {{ range $collections -}}
+        {{ $icon  := printf "img/icons/%s" .icon | relURL -}}
+        {{ $desc := .description | markdownify -}}
+        {{ $title := .title | markdownify -}}
+        {{ $docs := .docs | markdownify -}}
+        {{ $source := .source | markdownify -}}
+        {{ $galaxy := .galaxy | markdownify -}}
+        {{ $example := .example | markdownify -}}
+        <div class="col-lg-4 mb-5">
+          <img class="o-feature__icon" src="{{ $icon }}" alt="{{ .title }}" width="70" height="70" feature icon>
+          <h4 class="my-3">{{ $title }}</h4>
+          <p class="section-text">{{ $desc }}</p>
+            <div class="row">
+              <div class="col">
+                <p><a href="{{ .docs }}"><img title="Docs" src="static/img/icons/docs.png" style="width:50px;height:50px;"></a></p>
+              </div>
+              <div class="col">
+                <p><a href="{{ .source }}"><img title="Source" src="static/img/icons/git.png" style="width:50px;height:50px;"></a></p>
+              </div>
+              <div class="col">
+                <p><a href="{{ .galaxy }}"><img title="Galaxy" src="static/img/icons/ansible.png" style="width:50px;height:50px;"></a></p>
+              </div>
+              <div class="col">
+                <p><a href="{{ .example }}"><img title="Examples" src="static/img/icons/example.png" style="width:50px;height:50px;"></a></p>
+              </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
