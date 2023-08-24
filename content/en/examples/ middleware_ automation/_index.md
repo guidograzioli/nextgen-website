@@ -8,4 +8,4 @@ Learn how to automate the deployment of Red Hat Single Sign-On using Ansible Aut
 
 Try it out using the Instruqt platform.
 
-<iframe width="900" height="600" sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts" src="https://play.instruqt.com/embed/redhat/tracks/getting-started-with-ansible-middleware?token=em_D-Agxf3IVgsz4c4G" style="border: 0;"></iframe>
+<iframe width="900" height="600" sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts" src="https://play.instruqt.com/embed/redhat/tracks/a4mw-eap-sso?token=em_g_s6cXcaYxMnmLeW" style="border: 0;"></iframe>
