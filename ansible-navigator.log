@@ -1,0 +1,19 @@
+2023-08-24T13:19:28.392864+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-08-24T13:19:39.301686+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-08-24T13:21:24.705348+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-08-24T13:21:44.187972+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-08-24T13:22:10.236985+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-08-24T13:29:24.732021+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' Traceback (most recent call last):
+  File "/home/hcheruku/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hcheruku/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+

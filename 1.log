@@ -1,0 +1,2 @@
+2023-08-24T13:20:06.043405+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-08-24T13:21:00.657465+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout

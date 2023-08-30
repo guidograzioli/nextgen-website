@@ -3,18 +3,18 @@ title: Overview Ansible Middleware
 linkTitle: Overview
 menu: {main: {weight: 10}}
 usecases:
-  - title: UseCase1
+  - title: Installation/Provisioning
     icon: fas fa-dharmachakra
     description: >
-      Desciption of UseCase1
-  - title: UseCase2
+      Facilitate the installation and configuration of Red Hat Application Services via best practices and guidelines. Enforce what is currently running, where its deployed and its current state.
+  - title: Lifecycle Management
     icon: fas fa-dharmachakra
     description: >
-      Desciption of UseCase2
-  - title: UseCase3
+      Take control of day 2 activities and beyond, like upgrades, patches and bug fixes to enable consistency and strengthen security across your fleet.
+  - title: Reporting and Monitoring
     icon: fas fa-dharmachakra
     description: >
-      Desciption of UseCase3
+      Understand what is currently running, where its deployed and the current state.
 tech:
   - title: Ansible
     icon: ansible.png
@@ -43,6 +43,7 @@ Ansible Middleware brings the power of Ansible automation to [Red Hat Runtimes](
 {{% blocks/lead %}}
 
 <h2 align="left">Getting Started</h2>
+
 
 <img class="o-feature__icon" src="static/img/icons/gettingstarted.png" width="90" height="100">
 
