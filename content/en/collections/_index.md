@@ -1,7 +1,7 @@
 ---
 title: Ansible Middleware Collections
 linkTitle: Collections
-menu: {main: {weight: 20}}
+menu: {main: {weight: 10}}
 collections:
   - title: Wildfly
     icon: ansible.png
