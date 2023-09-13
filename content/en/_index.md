@@ -36,7 +36,7 @@ tech:
 {{< /blocks/cover >}}
 
 
-{{% blocks/section color="primary" %}}
+{{% blocks/section color="light" %}}
 Discover the benefits of using [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) and [Red Hat Application Services](https://developers.redhat.com/cheat-sheets/red-hat-openshift-application-services-cheat-sheet) to build, deploy, and manage multi-cloud application infrastructure at scale. Red Hat Application Services includes a number of Red Hat products including Red Hat [JBoss Enterprise Application Platform](https://developers.redhat.com/cheat-sheets/red-hat-openshift-application-services-cheat-sheet) (WildFly), Red Hat Data Grid (Infinispan), [Red Hat’s single-sign on technology](https://access.redhat.com/products/red-hat-single-sign-on/) (Keycloak), [Red Hat AMQ](https://developers.redhat.com/node/214105) (Kafka and Broker) and more.
 
 - **Consistent**: Ensure reliability with a consistent development and deployment model to create, modify, deploy, and manage business apps in an automated fashion.
@@ -70,7 +70,7 @@ Getting up to speed with Ansible Middleware is easy and only requires a few step
 {{% /blocks/lead%}}
 
 
-{{% blocks/section color="primary" type="row" %}}
+{{% blocks/section color="dark" type="row" %}}
 {{% blocks/feature icon="fa-lightbulb" title="Ansible Galaxy" %}}
 [middleware-automation](https://galaxy.ansible.com/middleware_automation) on Ansible Galaxy
 
