@@ -65,7 +65,7 @@ collections:
 
 {{% blocks/lead %}}
 
-<h2 align="center">Ansible Middileware Collections</h2><br/>
+<h2 align="center">Ansible Middleware Collections</h2><br/>
 
 {{% /blocks/lead %}}
 
