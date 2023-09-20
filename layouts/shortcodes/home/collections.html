@@ -12,7 +12,7 @@
         {{ $source := .source | markdownify -}}
         {{ $galaxy := .galaxy | markdownify -}}
         {{ $example := .example | markdownify -}}
-        <div class="col-lg-4 mb-5">
+        <div class="col-4">
           <img class="o-feature__icon" src="{{ $icon }}" alt="{{ .title }}" width="70" height="70" feature icon>
           <h4 class="my-3">{{ $title }}</h4>
           <p class="section-text">{{ $desc }}</p>
@@ -38,3 +38,4 @@
         {{ end }}
     </div>
 </div>
+
