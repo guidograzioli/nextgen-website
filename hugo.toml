@@ -83,7 +83,7 @@ description = "Ansible Middleware docs"
 
 # Comment out if you don't want the "print entire section" link enabled.
 [outputs]
-section = ["HTML", "print", "RSS"]
+section = ["HTML", "print"]
 
 [params]
 copyright = "Ansible Middleware Collections"
@@ -123,10 +123,10 @@ github_project_repo = "https://github.com/ansible-middleware"
 github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "011737558837375720776:fsdu1nryfng"
+gcs_engine_id = "91daaf0be73ba492e"
 
 # Enable Algolia DocSearch
-algolia_docsearch = true
+algolia_docsearch = false
 
 # Enable Lunr.js offline search
 offlineSearch = false
