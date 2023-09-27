@@ -123,10 +123,10 @@ github_project_repo = "https://github.com/ansible-middleware"
 github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "91daaf0be73ba492e"
+#gcs_engine_id = "91daaf0be73ba492e"
 
 # Enable Algolia DocSearch
-algolia_docsearch = false
+algolia_docsearch = true
 
 # Enable Lunr.js offline search
 offlineSearch = false
